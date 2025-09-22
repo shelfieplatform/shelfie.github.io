@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, Mail, ExternalLink } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface PrivacyPolicyProps {
   onBack: () => void;
@@ -9,6 +10,7 @@ interface PrivacyPolicyProps {
 
 export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
   const [isContactOpen, setIsContactOpen] = useState(false);
+  const { t } = useLanguage();
 
   const handleContactSupport = () => {
     setIsContactOpen(true);
@@ -41,9 +43,9 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
               className="text-white hover:bg-white/10"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back
+              {t('privacy.back')}
             </Button>
-            <h1 className="text-lg sm:text-xl font-bold">Privacy Policy</h1>
+            <h1 className="text-lg sm:text-xl font-bold">{t('privacy.title')}</h1>
             <div className="w-20" />
           </div>
         </div>
@@ -52,246 +54,246 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
         {renderSection(
-          'Last Updated: December 29, 2024',
+          t('privacy.lastUpdated'),
           <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-            This Privacy Policy describes how Shelfie ("we," "our," or "us") collects, uses, and shares your personal information when you use our mobile application and website (collectively, the "Service"). By using the Service, you agree to the collection and use of information in accordance with this policy.
+            {t('privacy.intro')}
           </p>
         )}
 
         {renderSection(
-          '1. Information We Collect',
+          t('privacy.section1.title'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              We collect information you provide directly to us, such as when you create an account, use our Service, or contact us for support.
+              {t('privacy.section1.intro')}
             </p>
             
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Account Information:</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">{t('privacy.section1.accountInfoTitle')}</h3>
               <ul className="list-disc list-inside space-y-1 text-white/80">
-                <li>Name, email address, username, and password</li>
-                <li>Profile picture and bio information</li>
-                <li>Date of birth and location information</li>
-                <li>Phone number (if provided for two-factor authentication)</li>
+                <li>{t('privacy.section1.accountInfo1')}</li>
+                <li>{t('privacy.section1.accountInfo2')}</li>
+                <li>{t('privacy.section1.accountInfo3')}</li>
+                <li>{t('privacy.section1.accountInfo4')}</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Content Information:</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">{t('privacy.section1.contentInfoTitle')}</h3>
               <ul className="list-disc list-inside space-y-1 text-white/80">
-                <li>Favorite books, movies, TV shows, music, and podcasts</li>
-                <li>Posts, comments, and reviews you create</li>
-                <li>Messages and communications with other users</li>
-                <li>Photos, videos, and other media you share</li>
+                <li>{t('privacy.section1.contentInfo1')}</li>
+                <li>{t('privacy.section1.contentInfo2')}</li>
+                <li>{t('privacy.section1.contentInfo3')}</li>
+                <li>{t('privacy.section1.contentInfo4')}</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Usage Information:</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">{t('privacy.section1.usageInfoTitle')}</h3>
               <ul className="list-disc list-inside space-y-1 text-white/80">
-                <li>How you interact with our Service</li>
-                <li>Pages visited, features used, and time spent</li>
-                <li>Device information and IP address</li>
-                <li>Location data (if you enable location services)</li>
+                <li>{t('privacy.section1.usageInfo1')}</li>
+                <li>{t('privacy.section1.usageInfo2')}</li>
+                <li>{t('privacy.section1.usageInfo3')}</li>
+                <li>{t('privacy.section1.usageInfo4')}</li>
               </ul>
             </div>
           </div>
         )}
 
         {renderSection(
-          '2. How We Use Your Information',
+          t('privacy.section2.title'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              We use the information we collect to provide, maintain, and improve our Service:
+              {t('privacy.section2.intro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-white/80">
-              <li>Provide and maintain the Service</li>
-              <li>Create and manage your account</li>
-              <li>Process transactions and send related information</li>
-              <li>Send technical notices, updates, and support messages</li>
-              <li>Respond to your comments and questions</li>
-              <li>Provide personalized content and recommendations</li>
-              <li>Monitor and analyze trends and usage</li>
-              <li>Detect, prevent, and address technical issues</li>
-              <li>Ensure security and prevent fraud</li>
+              <li>{t('privacy.section2.use1')}</li>
+              <li>{t('privacy.section2.use2')}</li>
+              <li>{t('privacy.section2.use3')}</li>
+              <li>{t('privacy.section2.use4')}</li>
+              <li>{t('privacy.section2.use5')}</li>
+              <li>{t('privacy.section2.use6')}</li>
+              <li>{t('privacy.section2.use7')}</li>
+              <li>{t('privacy.section2.use8')}</li>
+              <li>{t('privacy.section2.use9')}</li>
             </ul>
           </div>
         )}
 
         {renderSection(
-          '3. How We Share Your Information',
+          t('privacy.section3.title'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              We may share your information in the following circumstances:
+              {t('privacy.section3.intro')}
             </p>
             
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">With Your Consent:</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">{t('privacy.section3.consentTitle')}</h3>
               <ul className="list-disc list-inside space-y-1 text-white/80">
-                <li>When you explicitly consent to sharing</li>
-                <li>When you choose to make content public</li>
+                <li>{t('privacy.section3.consent1')}</li>
+                <li>{t('privacy.section3.consent2')}</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">With Other Users:</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">{t('privacy.section3.otherUsersTitle')}</h3>
               <ul className="list-disc list-inside space-y-1 text-white/80">
-                <li>Public profile information and posts</li>
-                <li>Messages sent to other users</li>
-                <li>Comments and interactions on public content</li>
+                <li>{t('privacy.section3.otherUsers1')}</li>
+                <li>{t('privacy.section3.otherUsers2')}</li>
+                <li>{t('privacy.section3.otherUsers3')}</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">With Service Providers:</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">{t('privacy.section3.serviceProvidersTitle')}</h3>
               <ul className="list-disc list-inside space-y-1 text-white/80">
-                <li>Cloud storage and hosting services</li>
-                <li>Analytics and performance monitoring</li>
-                <li>Customer support and communication tools</li>
-                <li>Payment processing (if applicable)</li>
+                <li>{t('privacy.section3.serviceProviders1')}</li>
+                <li>{t('privacy.section3.serviceProviders2')}</li>
+                <li>{t('privacy.section3.serviceProviders3')}</li>
+                <li>{t('privacy.section3.serviceProviders4')}</li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Legal Requirements:</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">{t('privacy.section3.legalTitle')}</h3>
               <ul className="list-disc list-inside space-y-1 text-white/80">
-                <li>To comply with legal obligations</li>
-                <li>To protect our rights and property</li>
-                <li>To prevent fraud or abuse</li>
-                <li>In case of emergency or safety concerns</li>
+                <li>{t('privacy.section3.legal1')}</li>
+                <li>{t('privacy.section3.legal2')}</li>
+                <li>{t('privacy.section3.legal3')}</li>
+                <li>{t('privacy.section3.legal4')}</li>
               </ul>
             </div>
           </div>
         )}
 
         {renderSection(
-          '4. Data Security',
+          t('privacy.section4.title'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              We implement appropriate technical and organizational measures to protect your personal information:
+              {t('privacy.section4.intro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-white/80">
-              <li>Encryption of data in transit and at rest</li>
-              <li>Regular security assessments and updates</li>
-              <li>Access controls and authentication</li>
-              <li>Secure data centers and infrastructure</li>
-              <li>Employee training on data protection</li>
+              <li>{t('privacy.section4.security1')}</li>
+              <li>{t('privacy.section4.security2')}</li>
+              <li>{t('privacy.section4.security3')}</li>
+              <li>{t('privacy.section4.security4')}</li>
+              <li>{t('privacy.section4.security5')}</li>
             </ul>
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.
+              {t('privacy.section4.warning')}
             </p>
           </div>
         )}
 
         {renderSection(
-          '5. Your Rights and Choices',
+          t('privacy.section5.title'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              You have certain rights regarding your personal information:
+              {t('privacy.section5.intro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-white/80">
-              <li>Access: Request a copy of your personal information</li>
-              <li>Correction: Update or correct inaccurate information</li>
-              <li>Deletion: Request deletion of your personal information</li>
-              <li>Portability: Export your data in a machine-readable format</li>
-              <li>Restriction: Limit how we process your information</li>
-              <li>Objection: Object to certain processing activities</li>
+              <li>{t('privacy.section5.rights1')}</li>
+              <li>{t('privacy.section5.rights2')}</li>
+              <li>{t('privacy.section5.rights3')}</li>
+              <li>{t('privacy.section5.rights4')}</li>
+              <li>{t('privacy.section5.rights5')}</li>
+              <li>{t('privacy.section5.rights6')}</li>
             </ul>
             <Button
               onClick={handleDataRequest}
               className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none"
             >
-              Request Your Data
+              {t('privacy.section5.requestData')}
             </Button>
           </div>
         )}
 
         {renderSection(
-          '6. Data Retention',
+          t('privacy.section6.title'),
           <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-            We retain your personal information for as long as necessary to provide our Service and fulfill the purposes outlined in this Privacy Policy. We will delete or anonymize your information when it is no longer needed, unless we are required to retain it for legal or regulatory purposes.
+            {t('privacy.section6.content')}
           </p>
         )}
 
         {renderSection(
-          '7. Children\'s Privacy',
+          t('privacy.section7.title'),
           <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-            Our Service is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can delete such information.
+            {t('privacy.section7.content')}
           </p>
         )}
 
         {renderSection(
-          '8. International Data Transfers',
+          t('privacy.section8.title'),
           <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-            Your information may be transferred to and processed in countries other than your own. We ensure that such transfers comply with applicable data protection laws and implement appropriate safeguards to protect your information.
+            {t('privacy.section8.content')}
           </p>
         )}
 
         {renderSection(
-          '9. Third-Party Services',
+          t('privacy.section9.title'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              Our Service may contain links to third-party websites or services. We are not responsible for the privacy practices of these third parties. We encourage you to read their privacy policies before providing any information.
+              {t('privacy.section9.intro')}
             </p>
             <div>
-              <h3 className="text-lg font-semibold mb-2 text-white">Integrated Services:</h3>
+              <h3 className="text-lg font-semibold mb-2 text-white">{t('privacy.section9.integratedServicesTitle')}</h3>
               <ul className="list-disc list-inside space-y-1 text-white/80">
-                <li>Spotify (for music recommendations)</li>
-                <li>Goodreads (for book recommendations)</li>
-                <li>Letterboxd (for movie recommendations)</li>
-                <li>Apple Music (for music integration)</li>
+                <li>{t('privacy.section9.integratedServices1')}</li>
+                <li>{t('privacy.section9.integratedServices2')}</li>
+                <li>{t('privacy.section9.integratedServices3')}</li>
+                <li>{t('privacy.section9.integratedServices4')}</li>
               </ul>
             </div>
           </div>
         )}
 
         {renderSection(
-          '10. Changes to This Privacy Policy',
+          t('privacy.section10.title'),
           <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. We encourage you to review this Privacy Policy periodically for any changes.
+            {t('privacy.section10.content')}
           </p>
         )}
 
         {renderSection(
-          '11. California Privacy Rights',
+          t('privacy.section11.title'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):
+              {t('privacy.section11.intro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-white/80">
-              <li>Right to know what personal information is collected</li>
-              <li>Right to delete personal information</li>
-              <li>Right to opt-out of the sale of personal information</li>
-              <li>Right to non-discrimination for exercising privacy rights</li>
+              <li>{t('privacy.section11.rights1')}</li>
+              <li>{t('privacy.section11.rights2')}</li>
+              <li>{t('privacy.section11.rights3')}</li>
+              <li>{t('privacy.section11.rights4')}</li>
             </ul>
           </div>
         )}
 
         {renderSection(
-          '12. European Privacy Rights',
+          t('privacy.section12.title'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              If you are in the European Economic Area (EEA), you have rights under the General Data Protection Regulation (GDPR):
+              {t('privacy.section12.intro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-white/80">
-              <li>Right of access to your personal data</li>
-              <li>Right to rectification of inaccurate data</li>
-              <li>Right to erasure ("right to be forgotten")</li>
-              <li>Right to restrict processing</li>
-              <li>Right to data portability</li>
-              <li>Right to object to processing</li>
+              <li>{t('privacy.section12.rights1')}</li>
+              <li>{t('privacy.section12.rights2')}</li>
+              <li>{t('privacy.section12.rights3')}</li>
+              <li>{t('privacy.section12.rights4')}</li>
+              <li>{t('privacy.section12.rights5')}</li>
+              <li>{t('privacy.section12.rights6')}</li>
             </ul>
           </div>
         )}
 
         {renderSection(
-          'Contact Us',
+          t('privacy.contactUsTitle'),
           <div className="space-y-4">
             <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-              If you have any questions about this Privacy Policy or our privacy practices, please contact us:
+              {t('privacy.contactUsIntro')}
             </p>
             <ul className="list-disc list-inside space-y-1 text-white/80">
-              <li>By email: shelfieplatform@gmail.com</li>
-              <li>By visiting: https://shelfieplatform.github.io/shelfie.github.io/</li>
+              <li>{t('privacy.contactUsEmail')}</li>
+              <li>{t('privacy.contactUsWebsite')}</li>
             </ul>
             <div className="flex gap-4">
               <Button
@@ -299,7 +301,7 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
                 className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none"
               >
                 <Mail className="w-4 h-4 mr-2" />
-                Contact Privacy Team
+                {t('privacy.contactPrivacyTeam')}
               </Button>
             </div>
           </div>
