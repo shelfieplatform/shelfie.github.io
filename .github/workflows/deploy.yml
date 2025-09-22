@@ -29,14 +29,13 @@ jobs:
         # Copy built files to root
         cp dist/index.html ./index.html
         cp -r dist/assets ./assets
-        cp 404.html ./404.html
         
         # Configure git
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         
         # Add and commit files
-        git add index.html assets/ 404.html .nojekyll
+        git add index.html assets/ .nojekyll
         git commit -m "Deploy: Update website files" || exit 0
         
         # Push changes
