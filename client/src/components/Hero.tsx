@@ -8,9 +8,6 @@ interface HeroProps {
 export default function Hero({ onJoinWaitlist }: HeroProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-purple-600 to-blue-900" />
-      
       {/* Floating Media Icons */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 animate-bounce">
@@ -36,26 +33,23 @@ export default function Hero({ onJoinWaitlist }: HeroProps) {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-          Welcome to{" "}
-          <span className="bg-gradient-to-r from-pink-400 to-yellow-400 bg-clip-text text-transparent">
-            Shelfie
-          </span>
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight tracking-tight">
+          Welcome to <span className="text-white">Shelfie</span>
         </h1>
-        <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+        <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed font-medium px-2">
           Curate and Build Your Digital Shelf of Favorites
-        </p>
-        <p className="text-sm sm:text-base text-white/70 mb-12 max-w-xl mx-auto">
-          Organize your books, music, movies, and TV shows. Share with friends and discover new favorites together.
         </p>
         <Button 
           size="lg" 
-          className="bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white font-semibold px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 active:scale-95 focus:outline-none w-full sm:w-auto"
           onClick={onJoinWaitlist}
           data-testid="button-join-waitlist"
         >
-          Join the Waitlist
+          <span className="relative">
+            Join the Waitlist
+            <span className="absolute -top-1 -right-1 w-3 h-3 bg-white/20 rounded-full animate-pulse"></span>
+          </span>
         </Button>
       </div>
     </section>
