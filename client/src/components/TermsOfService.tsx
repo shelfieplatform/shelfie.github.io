@@ -66,7 +66,7 @@ export default function TermsOfService({ onBack, onShowPrivacyPolicy }: TermsOfS
         {/* Intro Section */}
         <div className="bg-white/5 rounded-lg p-6 mb-8 border border-white/10">
           <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-center mb-4 text-white">
-            {t('terms.welcome')} <span className="bg-gradient-to-r from-[#A690F2] to-white bg-clip-text text-transparent">Shelfie</span>
+            {t('terms.welcome')} <span className="text-white">Shelfie</span>
           </h1>
           <p className="text-sm sm:text-base text-white/80 leading-relaxed mb-4">
             {t('terms.intro')}
