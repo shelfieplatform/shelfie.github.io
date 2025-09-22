@@ -28,7 +28,7 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
-  base: "/shelfie.github.io/",
+  base: "/",
   server: {
     fs: {
       strict: true,

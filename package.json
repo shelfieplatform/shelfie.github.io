@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://shelfieplatform.github.io/shelfie.github.io/",
+  "homepage": "https://shelfieplatform.github.io/",
   "scripts": {
     "dev": "vite",
     "dev:server": "NODE_ENV=development tsx server/index.ts",
