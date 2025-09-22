@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen, Music, Film, Tv } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface HeroProps {
   onJoinWaitlist?: () => void;
 }
 
 export default function Hero({ onJoinWaitlist }: HeroProps) {
+  const { t } = useLanguage();
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Floating Media Icons */}
@@ -35,10 +38,10 @@ export default function Hero({ onJoinWaitlist }: HeroProps) {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight tracking-tight">
-          Welcome to <span className="text-white">Shelfie</span>
+          {t('hero.welcome')} <span className="text-white">Shelfie</span>
         </h1>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed font-medium px-2">
-          Curate and Build Your Digital Shelf of Favorites
+          {t('hero.subtitle')}
         </p>
         <Button 
           size="lg" 
@@ -47,7 +50,7 @@ export default function Hero({ onJoinWaitlist }: HeroProps) {
           data-testid="button-join-waitlist"
         >
           <span className="relative">
-            Join the Waitlist
+            {t('hero.joinWaitlist')}
             <span className="absolute -top-1 -right-1 w-3 h-3 bg-white/20 rounded-full animate-pulse"></span>
           </span>
         </Button>

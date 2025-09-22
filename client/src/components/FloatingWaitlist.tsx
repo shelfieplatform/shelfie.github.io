@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { X, Mail, User } from "lucide-react";
 
 interface FloatingWaitlistProps {
@@ -14,6 +15,7 @@ export default function FloatingWaitlist({ isOpen, onClose }: FloatingWaitlistPr
   const [name, setName] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { t } = useLanguage();
 
   // Reset form when modal opens to ensure fresh state for each user
   useEffect(() => {
@@ -28,8 +30,8 @@ export default function FloatingWaitlist({ isOpen, onClose }: FloatingWaitlistPr
     e.preventDefault();
     if (!name.trim() || !email.trim()) {
       toast({
-        title: "Missing information",
-        description: "Please fill in both your name and email.",
+        title: t('waitlist.error'),
+        description: t('waitlist.errorDescription'),
         variant: "destructive",
       });
       return;
@@ -55,8 +57,8 @@ export default function FloatingWaitlist({ isOpen, onClose }: FloatingWaitlistPr
       console.log("Waitlist signup:", { name, email, timestamp: new Date().toISOString() });
       
       toast({
-        title: "Welcome to the waitlist! 🎉",
-        description: "We'll notify you when Shelfie launches.",
+        title: t('waitlist.success'),
+        description: t('waitlist.successDescription'),
       });
       
       // Reset form
@@ -87,7 +89,7 @@ export default function FloatingWaitlist({ isOpen, onClose }: FloatingWaitlistPr
       >
         <div className="flex justify-between items-center mb-6">
           <h3 className="text-xl sm:text-2xl font-bold text-white">
-            Join the Waitlist
+            {t('waitlist.title')}
           </h3>
           <Button
             variant="ghost"
@@ -101,20 +103,20 @@ export default function FloatingWaitlist({ isOpen, onClose }: FloatingWaitlistPr
         </div>
         
         <p className="text-white/80 mb-6 text-sm sm:text-base">
-          Be the first to know when Shelfie launches and get early access to organize your digital shelf!
+          {t('waitlist.description')}
         </p>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-2">
             <label htmlFor="name" className="text-sm font-medium text-white">
-              Name
+              {t('waitlist.name')}
             </label>
             <div className="relative">
               <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-white/60" />
               <Input
                 id="name"
                 type="text"
-                placeholder="Your name"
+                placeholder={t('waitlist.namePlaceholder')}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white/40 focus:ring-white/20"
@@ -125,14 +127,14 @@ export default function FloatingWaitlist({ isOpen, onClose }: FloatingWaitlistPr
           
           <div className="space-y-2">
             <label htmlFor="email" className="text-sm font-medium text-white">
-              Email
+              {t('waitlist.email')}
             </label>
             <div className="relative">
               <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-white/60" />
               <Input
                 id="email"
                 type="email"
-                placeholder="your@email.com"
+                placeholder={t('waitlist.emailPlaceholder')}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="pl-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-white/40 focus:ring-white/20"
@@ -147,7 +149,7 @@ export default function FloatingWaitlist({ isOpen, onClose }: FloatingWaitlistPr
             disabled={isSubmitting}
             data-testid="button-submit-waitlist"
           >
-            {isSubmitting ? "Joining..." : "Join Waitlist"}
+            {isSubmitting ? t('waitlist.submitting') : t('waitlist.submit')}
           </Button>
         </form>
       </div>

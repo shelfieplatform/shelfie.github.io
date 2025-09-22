@@ -1,24 +1,27 @@
 import { PlusCircle, UserPlus, Search, ArrowRight } from "lucide-react";
-
-const steps = [
-  {
-    icon: PlusCircle,
-    title: "Add Your Favorites",
-    description: "Start by adding books, movies, music, and TV shows you love to your digital shelf."
-  },
-  {
-    icon: UserPlus,
-    title: "Connect with Friends",
-    description: "Share your shelf with friends and discover their favorite content through social connections."
-  },
-  {
-    icon: Search,
-    title: "Discover & Organize",
-    description: "Get personalized recommendations and organize your collection with smart categorization."
-  }
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function HowItWorks() {
+  const { t } = useLanguage();
+
+  const steps = [
+    {
+      icon: PlusCircle,
+      title: t('howItWorks.step1.title'),
+      description: t('howItWorks.step1.description')
+    },
+    {
+      icon: UserPlus,
+      title: t('howItWorks.step2.title'),
+      description: t('howItWorks.step2.description')
+    },
+    {
+      icon: Search,
+      title: t('howItWorks.step3.title'),
+      description: t('howItWorks.step3.description')
+    }
+  ];
+
   return (
     <section className="py-12 sm:py-16 md:py-20 lg:py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

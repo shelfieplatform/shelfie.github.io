@@ -1,4 +1,5 @@
 import { Facebook, Instagram } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 // Custom X (formerly Twitter) icon component
 const XIcon = ({ className }: { className?: string }) => (
@@ -24,17 +25,19 @@ interface FooterProps {
 }
 
 export default function Footer({ onShowPrivacyPolicy, onShowTermsOfService }: FooterProps) {
+  const { t } = useLanguage();
+
   return (
     <footer className="border-t border-white/20 backdrop-blur-sm bg-black/10">
       <div className="max-w-7xl mx-auto px-4 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Brand - Left aligned */}
               <div>
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  Shelfie
-                </h3>
+              <h3 className="text-2xl font-bold text-white mb-4">
+                    {t('header.logo')}
+                  </h3>
                 <p className="text-white/80 mb-6 max-w-md">
-                  Build your digital shelf of favorites. Organize, share, and discover books, movies, music, and TV shows with friends.
+                  {t('footer.description')}
                 </p>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
@@ -53,8 +56,8 @@ export default function Footer({ onShowPrivacyPolicy, onShowTermsOfService }: Fo
               
               {/* Contact - Right aligned on desktop, left aligned on mobile */}
               <div className="md:text-right">
-                <h4 className="font-semibold mb-4 text-white">Contact</h4>
-                <p className="text-white/80 mb-2">Get in touch with us:</p>
+                <h4 className="font-semibold mb-4 text-white">{t('footer.contact')}</h4>
+                <p className="text-white/80 mb-2">{t('footer.contactDescription')}</p>
                 <a 
                   href="mailto:shelfieplatform@gmail.com" 
                   className="text-white hover:text-white/80 transition-colors break-all"
@@ -67,7 +70,7 @@ export default function Footer({ onShowPrivacyPolicy, onShowTermsOfService }: Fo
         <div className="border-t border-white/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white/80 text-center md:text-left">
-              © 2024 <span className="text-white">Shelfie</span>. All rights reserved.
+              © 2024 <span className="text-white">{t('header.logo')}</span>. {t('footer.copyright')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm text-white/80">
               <button 
@@ -75,14 +78,14 @@ export default function Footer({ onShowPrivacyPolicy, onShowTermsOfService }: Fo
                 className="hover:text-white transition-colors text-center" 
                 data-testid="link-privacy"
               >
-                Privacy Policy
+                {t('footer.privacyPolicy')}
               </button>
               <button 
                 onClick={onShowTermsOfService}
                 className="hover:text-white transition-colors text-center" 
                 data-testid="link-terms"
               >
-                Terms of Service
+                {t('footer.termsOfService')}
               </button>
             </div>
           </div>
