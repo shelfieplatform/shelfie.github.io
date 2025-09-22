@@ -28,6 +28,7 @@ jobs:
       run: |
         # Copy built files to root
         cp dist/index.html ./index.html
+        rm -rf assets
         cp -r dist/assets ./assets
         
         # Configure git
