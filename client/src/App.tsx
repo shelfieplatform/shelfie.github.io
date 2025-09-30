@@ -14,15 +14,12 @@ function Router() {
   const [location, setLocation] = useLocation();
 
   useEffect(() => {
-    // Handle SPA redirect format from GitHub Pages
-    // Convert ?/path to /path
-    const urlParams = new URLSearchParams(window.location.search);
-    const pathParam = urlParams.get('/');
-    
-    if (pathParam) {
-      // Clean up the path and navigate
-      const cleanPath = pathParam.replace(/~and~/g, '&');
-      setLocation(cleanPath);
+    // Handle redirect from GitHub Pages 404.html
+    const redirectPath = sessionStorage.getItem('redirectPath');
+    if (redirectPath && redirectPath !== '/') {
+      // Clear the stored path and navigate
+      sessionStorage.removeItem('redirectPath');
+      setLocation(redirectPath);
     }
   }, [setLocation]);
 
