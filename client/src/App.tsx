@@ -18,7 +18,8 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      {/* Legal pages are now static HTML files - no routing needed */}
+      <Route path="/privacy-policy" component={PrivacyPolicyPage} />
+      <Route path="/terms-of-service" component={TermsOfServicePage} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>

@@ -1,3 +1,2 @@
-# Netlify-style redirects for GitHub Pages
-/privacy-policy    /   200
-/terms-of-service  /   200
+# CloudFlare Pages redirects for SPA
+/*    /index.html   200
