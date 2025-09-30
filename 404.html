@@ -14,13 +14,15 @@
     <script type="module" crossorigin src="/assets/index-BbfTC7WQ.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-jgFUTb2a.css">
     
-    <!-- Simple SPA redirect for GitHub Pages -->
+    <!-- SPA redirect for GitHub Pages with custom domain -->
     <script type="text/javascript">
       // Store the current path and redirect to main page
       var currentPath = window.location.pathname;
       if (currentPath !== '/') {
         // Store the path in sessionStorage for the React app to use
         sessionStorage.setItem('redirectPath', currentPath);
+        // Also store in localStorage as backup
+        localStorage.setItem('redirectPath', currentPath);
       }
       // Redirect to main page
       window.location.replace('/');
