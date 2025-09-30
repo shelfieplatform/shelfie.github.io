@@ -14,11 +14,12 @@ function Router() {
   const [location, setLocation] = useLocation();
 
   useEffect(() => {
-    // Handle redirect from GitHub Pages 404.html
-    const redirectPath = sessionStorage.getItem('redirectPath');
+    // Handle redirect from GitHub Pages 404.html (custom domain support)
+    const redirectPath = sessionStorage.getItem('redirectPath') || localStorage.getItem('redirectPath');
     if (redirectPath && redirectPath !== '/') {
       // Clear the stored path and navigate
       sessionStorage.removeItem('redirectPath');
+      localStorage.removeItem('redirectPath');
       setLocation(redirectPath);
     }
   }, [setLocation]);
