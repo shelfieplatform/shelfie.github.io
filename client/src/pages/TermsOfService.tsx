@@ -6,7 +6,7 @@ export default function TermsOfServicePage() {
   };
 
   const handleShowPrivacyPolicy = () => {
-    window.location.href = '/privacy-policy';
+    window.location.href = '/#/privacy-policy';
   };
 
   return <TermsOfService onBack={handleBack} onShowPrivacyPolicy={handleShowPrivacyPolicy} />;

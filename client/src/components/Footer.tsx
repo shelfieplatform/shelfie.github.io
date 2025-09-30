@@ -73,14 +73,14 @@ export default function Footer({}: FooterProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm text-white/80">
               <a 
-                href="/privacy-policy"
+                href="/#/privacy-policy"
                 className="hover:text-white transition-colors text-center" 
                 data-testid="link-privacy"
               >
                 {t('footer.privacyPolicy')}
               </a>
               <a 
-                href="/terms-of-service"
+                href="/#/terms-of-service"
                 className="hover:text-white transition-colors text-center" 
                 data-testid="link-terms"
               >

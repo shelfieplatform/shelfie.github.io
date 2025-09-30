@@ -13,22 +13,13 @@ import { useEffect } from "react";
 function Router() {
   const [location, setLocation] = useLocation();
 
-  useEffect(() => {
-    // Handle redirect from GitHub Pages 404.html (custom domain support)
-    const redirectPath = sessionStorage.getItem('redirectPath') || localStorage.getItem('redirectPath');
-    if (redirectPath && redirectPath !== '/') {
-      // Clear the stored path and navigate
-      sessionStorage.removeItem('redirectPath');
-      localStorage.removeItem('redirectPath');
-      setLocation(redirectPath);
-    }
-  }, [setLocation]);
+  // No complex redirect logic needed with hash routing
 
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/privacy-policy" component={PrivacyPolicyPage} />
-      <Route path="/terms-of-service" component={TermsOfServicePage} />
+      <Route path="/#/privacy-policy" component={PrivacyPolicyPage} />
+      <Route path="/#/terms-of-service" component={TermsOfServicePage} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
