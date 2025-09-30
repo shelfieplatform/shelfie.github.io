@@ -20,11 +20,10 @@ const socialLinks = [
 ];
 
 interface FooterProps {
-  onShowPrivacyPolicy?: () => void;
-  onShowTermsOfService?: () => void;
+  // No longer need onClick handlers since we're using proper links
 }
 
-export default function Footer({ onShowPrivacyPolicy, onShowTermsOfService }: FooterProps) {
+export default function Footer({}: FooterProps) {
   const { t } = useLanguage();
 
   return (
@@ -73,20 +72,20 @@ export default function Footer({ onShowPrivacyPolicy, onShowTermsOfService }: Fo
               © 2024 <span className="text-white">{t('header.logo')}</span>. {t('footer.copyright')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm text-white/80">
-              <button 
-                onClick={onShowPrivacyPolicy}
+              <a 
+                href="/privacy-policy"
                 className="hover:text-white transition-colors text-center" 
                 data-testid="link-privacy"
               >
                 {t('footer.privacyPolicy')}
-              </button>
-              <button 
-                onClick={onShowTermsOfService}
+              </a>
+              <a 
+                href="/terms-of-service"
                 className="hover:text-white transition-colors text-center" 
                 data-testid="link-terms"
               >
                 {t('footer.termsOfService')}
-              </button>
+              </a>
             </div>
           </div>
         </div>
