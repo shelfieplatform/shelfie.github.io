@@ -251,7 +251,7 @@ export default function TermsOfService({ onBack, onShowPrivacyPolicy }: TermsOfS
           </p>
           <div className="text-sm sm:text-base text-white/80 leading-relaxed mb-4">
             <p>Email: shelfieplatform@gmail.com</p>
-            <p>Website: https://shelfieplatform.github.io/shelfie.github.io/</p>
+            <p>Website: https://shelfieplatform.com</p>
           </div>
           <Button
             onClick={handleContactSupport}

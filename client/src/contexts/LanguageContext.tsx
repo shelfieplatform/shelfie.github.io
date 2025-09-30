@@ -163,7 +163,7 @@ const translations = {
     'privacy.contactUsTitle': 'Contact Us',
     'privacy.contactUsIntro': 'If you have any questions about this Privacy Policy or our privacy practices, please contact us:',
     'privacy.contactUsEmail': 'By email: shelfieplatform@gmail.com',
-    'privacy.contactUsWebsite': 'By visiting: https://shelfieplatform.github.io/shelfie.github.io/',
+    'privacy.contactUsWebsite': 'By visiting: https://shelfieplatform.com',
     'privacy.contactPrivacyTeam': 'Contact Privacy Team',
     
     // Terms of Service
@@ -384,7 +384,7 @@ const translations = {
     'privacy.contactUsTitle': 'İletişim',
     'privacy.contactUsIntro': 'Sorularınız için bizimle iletişime geçebilirsiniz:',
     'privacy.contactUsEmail': 'E-posta: shelfieplatform@gmail.com',
-    'privacy.contactUsWebsite': 'Web Sitesi: https://shelfieplatform.github.io/shelfie.github.io/',
+    'privacy.contactUsWebsite': 'Web Sitesi: https://shelfieplatform.com',
     'privacy.contactPrivacyTeam': 'Privacy Team ile İletişim Kurun',
     
     // Terms of Service
