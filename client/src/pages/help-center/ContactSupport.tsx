@@ -246,7 +246,7 @@ export default function ContactSupport(props: any) {
                         <option.icon className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg mb-2 group-hover:text-white transition-colors">
+                        <h3 className="font-semibold text-lg mb-2 text-white group-hover:text-white transition-colors">
                           {option.title}
                         </h3>
                         <p className="text-white/80 text-sm">
