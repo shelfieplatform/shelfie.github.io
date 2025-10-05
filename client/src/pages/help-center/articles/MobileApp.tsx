@@ -10,18 +10,8 @@ export default function MobileApp(props: any) {
 
   const appFeatures = [
     {
-      title: t('helpCenter.articles.mobileApp.features.offline.title'),
-      description: t('helpCenter.articles.mobileApp.features.offline.description'),
-      icon: CheckCircle
-    },
-    {
       title: t('helpCenter.articles.mobileApp.features.notifications.title'),
       description: t('helpCenter.articles.mobileApp.features.notifications.description'),
-      icon: CheckCircle
-    },
-    {
-      title: t('helpCenter.articles.mobileApp.features.camera.title'),
-      description: t('helpCenter.articles.mobileApp.features.camera.description'),
       icon: CheckCircle
     },
     {
@@ -78,19 +68,6 @@ export default function MobileApp(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.mobileApp.introduction.content')}
             </p>
-            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
-                <div>
-                  <h3 className="font-semibold text-purple-200 mb-2">
-                    {t('helpCenter.articles.mobileApp.introduction.tip')}
-                  </h3>
-                  <p className="text-purple-100">
-                    {t('helpCenter.articles.mobileApp.introduction.tipContent')}
-                  </p>
-                </div>
-              </div>
-            </div>
           </CardContent>
         </Card>
 
@@ -186,6 +163,7 @@ export default function MobileApp(props: any) {
                   <li>2. {t('helpCenter.articles.mobileApp.installation.steps.step2')}</li>
                   <li>3. {t('helpCenter.articles.mobileApp.installation.steps.step3')}</li>
                   <li>4. {t('helpCenter.articles.mobileApp.installation.steps.step4')}</li>
+                  <li>5. {t('helpCenter.articles.mobileApp.installation.steps.step5')}</li>
                 </ol>
               </div>
             </div>

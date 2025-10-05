@@ -25,7 +25,6 @@ import SettingUpProfile from "@/pages/help-center/articles/SettingUpProfile";
 import Dashboard from "@/pages/help-center/articles/Dashboard";
 import PrivacySettings from "@/pages/help-center/articles/PrivacySettings";
 import MobileApp from "@/pages/help-center/articles/MobileApp";
-import DesktopMobile from "@/pages/help-center/articles/DesktopMobile";
 import UnderstandingNotifications from "@/pages/help-center/articles/UnderstandingNotifications";
 import BasicSecurityTips from "@/pages/help-center/articles/BasicSecurityTips";
 import GettingFirstFollowers from "@/pages/help-center/articles/GettingFirstFollowers";
@@ -119,7 +118,6 @@ function Router() {
       <Route path="/help-center/getting-started/dashboard" component={Dashboard} />
       <Route path="/help-center/getting-started/privacy-settings" component={PrivacySettings} />
       <Route path="/help-center/getting-started/mobile-app" component={MobileApp} />
-      <Route path="/help-center/getting-started/desktop-mobile" component={DesktopMobile} />
       <Route path="/help-center/getting-started/notifications" component={UnderstandingNotifications} />
       <Route path="/help-center/getting-started/understanding-notifications" component={UnderstandingNotifications} />
       <Route path="/help-center/getting-started/security-tips" component={BasicSecurityTips} />

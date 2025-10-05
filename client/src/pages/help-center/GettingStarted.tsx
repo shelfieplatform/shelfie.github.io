@@ -56,13 +56,6 @@ export default function GettingStarted(props: any) {
       estimatedTime: "2 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.desktopMobile.title'),
-      description: t('helpCenter.gettingStarted.desktopMobile.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/desktop-mobile",
-      estimatedTime: "3 min read"
-    },
-    {
       title: t('helpCenter.gettingStarted.firstFollowers.title'),
       description: t('helpCenter.gettingStarted.firstFollowers.description'),
       icon: Users,

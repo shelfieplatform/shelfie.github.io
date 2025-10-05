@@ -4,11 +4,8 @@ import { ArrowLeft, BookOpen, Heart, Users, Star, CheckCircle, BookMarked, Home 
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
-interface WelcomeToShelfieProps {
-  onBack?: () => void;
-}
-
-export default function WelcomeToShelfie({ onBack }: WelcomeToShelfieProps) {
+export default function WelcomeToShelfie(props: any) {
+  const { onBack } = props;
   const { t } = useLanguage();
 
   const features = [
