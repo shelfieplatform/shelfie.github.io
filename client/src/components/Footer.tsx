@@ -14,8 +14,8 @@ const XIcon = ({ className }: { className?: string }) => (
 );
 
 const socialLinks = [
-  { icon: XIcon, href: "#", label: "X" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: XIcon, href: "https://x.com/shelfieplatform", label: "X" },
+  { icon: Instagram, href: "https://www.instagram.com/shelfieplatform/", label: "Instagram" },
   { icon: Facebook, href: "#", label: "Facebook" },
 ];
 
