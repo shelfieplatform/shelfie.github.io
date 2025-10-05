@@ -202,9 +202,12 @@ function Router() {
       <Route path="/help-center/troubleshooting/performance-problems" component={PerformanceProblems} />
       <Route path="/help-center/troubleshooting/browser-compatibility" component={BrowserCompatibility} />
       <Route path="/help-center/troubleshooting/mobile-app-issues" component={MobileAppIssues} />
+      <Route path="/help-center/troubleshooting/account-access" component={AccountAccessProblems} />
       <Route path="/help-center/troubleshooting/account-access-problems" component={AccountAccessProblems} />
+      <Route path="/help-center/troubleshooting/data-sync" component={DataSyncIssues} />
       <Route path="/help-center/troubleshooting/data-sync-issues" component={DataSyncIssues} />
       <Route path="/help-center/troubleshooting/error-messages" component={ErrorMessages} />
+      <Route path="/help-center/troubleshooting/contact-support" component={ContactTechnicalSupport} />
       <Route path="/help-center/troubleshooting/contact-technical-support" component={ContactTechnicalSupport} />
       
       {/* Fallback to 404 */}
