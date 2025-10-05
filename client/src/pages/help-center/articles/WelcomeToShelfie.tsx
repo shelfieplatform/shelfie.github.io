@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, BookOpen, Heart, Users, Star, CheckCircle } from "lucide-react";
+import { ArrowLeft, BookOpen, Heart, Users, Star, CheckCircle, BookMarked, Home } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
@@ -31,6 +31,11 @@ export default function WelcomeToShelfie({ onBack }: WelcomeToShelfieProps) {
       icon: Star,
       title: t('helpCenter.articles.welcome.features.recommendations.title'),
       description: t('helpCenter.articles.welcome.features.recommendations.description')
+    },
+    {
+      icon: BookMarked,
+      title: t('helpCenter.articles.welcome.features.privateDiary.title'),
+      description: t('helpCenter.articles.welcome.features.privateDiary.description')
     }
   ];
 
@@ -63,26 +68,34 @@ export default function WelcomeToShelfie({ onBack }: WelcomeToShelfieProps) {
       <div className="sticky top-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14 sm:h-16">
-            {onBack ? (
-              <Button
-                onClick={onBack}
-                variant="ghost"
-                className="text-white hover:bg-white/10"
-              >
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                {t('helpCenter.back')}
-              </Button>
-            ) : (
-              <Link href="/help-center/getting-started">
+            <div className="flex items-center space-x-4">
+              {onBack ? (
                 <Button
+                  onClick={onBack}
                   variant="ghost"
                   className="text-white hover:bg-white/10"
                 >
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   {t('helpCenter.back')}
                 </Button>
+              ) : (
+                <Link href="/help-center/getting-started">
+                  <Button
+                    variant="ghost"
+                    className="text-white hover:bg-white/10"
+                  >
+                    <ArrowLeft className="w-4 h-4 mr-2" />
+                    {t('helpCenter.back')}
+                  </Button>
+                </Link>
+              )}
+              <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+                <div className="w-8 h-8 bg-gradient-to-r from-[#A690F2] to-[#9C7FE8] rounded-lg flex items-center justify-center">
+                  <Home className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-lg sm:text-xl font-bold text-white">Shelfie</span>
               </Link>
-            )}
+            </div>
             <h1 className="text-lg sm:text-xl font-bold">
               {t('helpCenter.articles.welcome.title')}
             </h1>
@@ -135,7 +148,7 @@ export default function WelcomeToShelfie({ onBack }: WelcomeToShelfieProps) {
           <h2 className="text-2xl font-bold mb-8 text-center">
             {t('helpCenter.articles.welcome.features.title')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <Card key={index} className="bg-white/10 border-white/20">
                 <CardContent className="p-6">
@@ -201,14 +214,6 @@ export default function WelcomeToShelfie({ onBack }: WelcomeToShelfieProps) {
                   </h3>
                   <p className="text-white/80 text-sm">
                     {t('helpCenter.articles.welcome.tips.tip2.content')}
-                  </p>
-                </div>
-                <div className="bg-white/5 rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">
-                    {t('helpCenter.articles.welcome.tips.tip3.title')}
-                  </h3>
-                  <p className="text-white/80 text-sm">
-                    {t('helpCenter.articles.welcome.tips.tip3.content')}
                   </p>
                 </div>
               </div>
