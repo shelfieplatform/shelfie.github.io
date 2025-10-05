@@ -128,23 +128,22 @@ export default function ContactSupport(props: any) {
           <h2 className="text-2xl font-bold mb-8 text-center text-white">
             {t('helpCenter.contact.contactOptions.title')}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-md mx-auto">
             {contactOptions.map((option, index) => (
               <Card key={index} className="bg-white/10 border-white/20">
-                <CardContent className="p-6 text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 rounded-full mb-4">
-                    <option.icon className="w-6 h-6 text-white" />
+                <CardContent className="p-8 text-center">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full mb-6">
+                    <option.icon className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2 text-white">
+                  <h3 className="font-semibold text-xl mb-3 text-white">
                     {option.title}
                   </h3>
-                  <p className="text-white/70 text-sm mb-4">
+                  <p className="text-white/80 text-base mb-6">
                     {option.description}
                   </p>
                   <Button
                     onClick={option.action}
-                    disabled={option.disabled}
-                    className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white w-full"
+                    className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white px-8 py-3 text-lg"
                   >
                     {option.buttonText}
                   </Button>
