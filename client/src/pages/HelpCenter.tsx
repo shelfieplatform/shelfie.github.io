@@ -114,7 +114,7 @@ export default function HelpCenter(props: any) {
                 <span className="text-lg sm:text-xl font-bold text-white">Shelfie</span>
               </Link>
             </div>
-            <h1 className="text-lg sm:text-xl font-bold">{t('helpCenter.title')}</h1>
+            <h1 className="text-lg sm:text-xl font-bold text-white">{t('helpCenter.title')}</h1>
             <div className="w-20" />
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function HelpCenter(props: any) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
         {/* Hero Section */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
             {t('helpCenter.hero.title')}
           </h1>
           <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
@@ -148,7 +148,7 @@ export default function HelpCenter(props: any) {
 
         {/* Browse by Category */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 text-center">
+          <h2 className="text-2xl font-bold mb-8 text-center text-white">
             {t('helpCenter.categories.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -182,7 +182,7 @@ export default function HelpCenter(props: any) {
 
         {/* Popular Articles */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 text-center">
+          <h2 className="text-2xl font-bold mb-8 text-center text-white">
             {t('helpCenter.popular.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -214,7 +214,7 @@ export default function HelpCenter(props: any) {
         <div className="text-center">
           <Card className="bg-white/10 border-white/20 max-w-2xl mx-auto">
             <CardContent className="p-8">
-              <h3 className="text-xl font-semibold mb-4">
+              <h3 className="text-xl font-semibold mb-4 text-white">
                 {t('helpCenter.contact.title')}
               </h3>
               <p className="text-white/80 mb-6">
