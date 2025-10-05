@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Smartphone, Download, Apple, Android, CheckCircle, ExternalLink } from "lucide-react";
+import { ArrowLeft, Smartphone, Download, Apple, Smartphone as Android, CheckCircle, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
