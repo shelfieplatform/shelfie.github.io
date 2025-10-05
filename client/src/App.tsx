@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import ScrollToTop from "@/components/ScrollToTop";
 import Home from "@/pages/Home";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicy";
 import TermsOfServicePage from "@/pages/TermsOfService";
@@ -94,8 +95,10 @@ function Router() {
   // No complex redirect logic needed - using static HTML files for legal pages
 
   return (
-    <Switch>
-      <Route path="/" component={Home} />
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" component={Home} />
       <Route path="/privacy-policy" component={PrivacyPolicyPage} />
       <Route path="/terms-of-service" component={TermsOfServicePage} />
       <Route path="/help-center" component={HelpCenter} />
@@ -217,6 +220,7 @@ function Router() {
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
+    </>
   );
 }
 
