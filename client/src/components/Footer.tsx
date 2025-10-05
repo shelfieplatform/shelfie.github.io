@@ -73,6 +73,13 @@ export default function Footer({}: FooterProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm text-white/80">
               <a 
+                href="/help-center"
+                className="hover:text-white transition-colors text-center" 
+                data-testid="link-help"
+              >
+                {t('footer.helpCenter')}
+              </a>
+              <a 
                 href="/privacy-policy"
                 className="hover:text-white transition-colors text-center" 
                 data-testid="link-privacy"

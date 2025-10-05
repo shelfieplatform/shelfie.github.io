@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Home from "@/pages/Home";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicy";
 import TermsOfServicePage from "@/pages/TermsOfService";
+import HelpCenter from "@/pages/HelpCenter";
 import NotFound from "@/pages/not-found";
 import { useEffect } from "react";
 
@@ -20,6 +21,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/privacy-policy" component={PrivacyPolicyPage} />
       <Route path="/terms-of-service" component={TermsOfServicePage} />
+      <Route path="/help-center" component={HelpCenter} />
       {/* Fallback to 404 */}
       <Route component={NotFound} />
     </Switch>
