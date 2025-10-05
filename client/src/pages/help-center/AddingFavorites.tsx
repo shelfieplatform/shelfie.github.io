@@ -42,13 +42,6 @@ export default function AddingFavorites(props: any) {
       estimatedTime: "6 min read"
     },
     {
-      title: t('helpCenter.addingFavorites.organizeFavorites.title'),
-      description: t('helpCenter.addingFavorites.organizeFavorites.description'),
-      icon: FolderOpen,
-      href: "/help-center/adding-favorites/organize-favorites",
-      estimatedTime: "4 min read"
-    },
-    {
       title: t('helpCenter.addingFavorites.shareFavorites.title'),
       description: t('helpCenter.addingFavorites.shareFavorites.description'),
       icon: Share,

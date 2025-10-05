@@ -50,7 +50,6 @@ import AddingBooks from "@/pages/help-center/articles/AddingBooks";
 import AddingMovies from "@/pages/help-center/articles/AddingMovies";
 import AddingMusic from "@/pages/help-center/articles/AddingMusic";
 import AddingSeries from "@/pages/help-center/articles/AddingSeries";
-import OrganizingFavorites from "@/pages/help-center/articles/OrganizingFavorites";
 import SearchingFavorites from "@/pages/help-center/articles/SearchingFavorites";
 import RatingReviewing from "@/pages/help-center/articles/RatingReviewing";
 import SharingFavorites from "@/pages/help-center/articles/SharingFavorites";
@@ -158,14 +157,12 @@ function Router() {
       <Route path="/help-center/adding-favorites/adding-series" component={AddingSeries} />
       <Route path="/help-center/adding-favorites/import-lists" component={ImportingExporting} />
       <Route path="/help-center/adding-favorites/importing-exporting" component={ImportingExporting} />
-      <Route path="/help-center/adding-favorites/organize-favorites" component={OrganizingFavorites} />
-      <Route path="/help-center/adding-favorites/organizing-favorites" component={OrganizingFavorites} />
       <Route path="/help-center/adding-favorites/share-favorites" component={SharingFavorites} />
       <Route path="/help-center/adding-favorites/sharing-favorites" component={SharingFavorites} />
       <Route path="/help-center/adding-favorites/find-content" component={SearchingFavorites} />
       <Route path="/help-center/adding-favorites/searching-favorites" component={SearchingFavorites} />
       <Route path="/help-center/adding-favorites/rating-reviewing" component={RatingReviewing} />
-      <Route path="/help-center/adding-favorites/manage-collections" component={OrganizingFavorites} />
+      <Route path="/help-center/adding-favorites/manage-collections" component={BulkActions} />
       <Route path="/help-center/adding-favorites/bulk-import" component={BulkActions} />
       <Route path="/help-center/adding-favorites/bulk-actions" component={BulkActions} />
       <Route path="/help-center/adding-favorites/favorite-categories" component={AdvancedSearch} />
