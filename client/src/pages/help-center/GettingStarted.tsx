@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen, User, Settings, Smartphone, Users, Bell, Shield, Eye } from "lucide-react";
+import { ArrowLeft, BookOpen, User, Settings, Smartphone, Users, Bell, Shield, Eye, Home } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
@@ -105,26 +105,34 @@ export default function GettingStarted(props: any) {
       <div className="sticky top-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-14 sm:h-16">
-            {onBack ? (
-              <Button
-                onClick={onBack}
-                variant="ghost"
-                className="text-white hover:bg-white/10"
-              >
-                <ArrowLeft className="w-4 h-4 mr-2" />
-                {t('helpCenter.back')}
-              </Button>
-            ) : (
-              <Link href="/help-center">
+            <div className="flex items-center space-x-4">
+              {onBack ? (
                 <Button
+                  onClick={onBack}
                   variant="ghost"
                   className="text-white hover:bg-white/10"
                 >
                   <ArrowLeft className="w-4 h-4 mr-2" />
                   {t('helpCenter.back')}
                 </Button>
+              ) : (
+                <Link href="/help-center">
+                  <Button
+                    variant="ghost"
+                    className="text-white hover:bg-white/10"
+                  >
+                    <ArrowLeft className="w-4 h-4 mr-2" />
+                    {t('helpCenter.back')}
+                  </Button>
+                </Link>
+              )}
+              <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+                <div className="w-8 h-8 bg-gradient-to-r from-[#A690F2] to-[#9C7FE8] rounded-lg flex items-center justify-center">
+                  <Home className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-lg sm:text-xl font-bold text-white">Shelfie</span>
               </Link>
-            )}
+            </div>
             <h1 className="text-lg sm:text-xl font-bold">
               {t('helpCenter.categories.gettingStarted.title')}
             </h1>
