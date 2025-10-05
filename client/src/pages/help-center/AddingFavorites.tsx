@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Heart, BookOpen, Film, Music, Upload, FolderOpen, Share, Search, Star, Download, Tag } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface AddingFavoritesProps {
   onBack?: () => void;
@@ -107,7 +108,7 @@ export default function AddingFavorites(props: any) {
             <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.categories.addingFavorites.title')}
             </h1>
-            <div className="w-20" />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

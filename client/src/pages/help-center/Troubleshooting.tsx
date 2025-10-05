@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Wrench, LogIn, Smartphone, Upload, Search, Bell, Zap, Globe, AlertTriangle, RotateCcw, MessageSquare } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface TroubleshootingProps {
   onBack?: () => void;
@@ -128,7 +129,7 @@ export default function Troubleshooting(props: any) {
             <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.categories.troubleshooting.title')}
             </h1>
-            <div className="w-20" />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

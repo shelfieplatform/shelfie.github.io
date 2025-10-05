@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { ArrowLeft, MessageCircle, Mail, Send, Bug, Lightbulb } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface ContactSupportProps {
   onBack?: () => void;
@@ -97,7 +98,7 @@ export default function ContactSupport(props: any) {
             <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.categories.contactSupport.title')}
             </h1>
-            <div className="w-20" />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

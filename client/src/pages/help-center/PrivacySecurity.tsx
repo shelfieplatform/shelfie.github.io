@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Shield, Eye, UserX, FileText, Key, Bell, Settings, Trash2, RotateCcw, Lock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface PrivacySecurityProps {
   onBack?: () => void;
@@ -128,7 +129,7 @@ export default function PrivacySecurity(props: any) {
             <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.categories.privacySecurity.title')}
             </h1>
-            <div className="w-20" />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, User, Settings, Camera, FileText, Shield, Key, UserX, Download, RotateCcw, Eye } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface AccountProfileProps {
   onBack?: () => void;
@@ -121,7 +122,7 @@ export default function AccountProfile(props: any) {
             <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.categories.accountProfile.title')}
             </h1>
-            <div className="w-20" />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

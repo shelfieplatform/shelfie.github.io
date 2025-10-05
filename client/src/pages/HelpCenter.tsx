@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Search, BookOpen, User, Heart, Shield, Wrench, MessageCircle, ArrowRight, HelpCircle, Home } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 interface HelpCenterProps {
   onBack?: () => void;
@@ -115,7 +116,7 @@ export default function HelpCenter(props: any) {
               </Link>
             </div>
             <h1 className="text-lg sm:text-xl font-bold text-white">{t('helpCenter.title')}</h1>
-            <div className="w-20" />
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
