@@ -106,7 +106,7 @@ export default function UpdateProfile(props: any) {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">{section.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-white">{section.title}</h3>
                     <p className="text-white/80 mb-4">{section.description}</p>
                     <h4 className="font-semibold text-white mb-3">
                       {t('helpCenter.articles.updateProfile.fields.title')}
@@ -197,7 +197,7 @@ export default function UpdateProfile(props: any) {
             <div className="grid md:grid-cols-2 gap-4">
               <Link href="/help-center/account-profile/change-username">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.updateProfile.related.changeUsername')}
                   </h3>
                   <p className="text-white/60 text-sm">
@@ -207,7 +207,7 @@ export default function UpdateProfile(props: any) {
               </Link>
               <Link href="/help-center/account-profile/profile-pictures">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.updateProfile.related.profilePictures')}
                   </h3>
                   <p className="text-white/60 text-sm">

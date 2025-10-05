@@ -83,7 +83,7 @@ export default function MobileApp(props: any) {
               <div className="bg-black/20 rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Apple className="w-8 h-8 text-white" />
-                  <h3 className="text-xl font-semibold">iOS</h3>
+                  <h3 className="text-xl font-semibold text-white">iOS</h3>
                 </div>
                 <p className="text-white/80 mb-4">
                   {t('helpCenter.articles.mobileApp.download.ios.description')}
@@ -103,7 +103,7 @@ export default function MobileApp(props: any) {
               <div className="bg-black/20 rounded-lg p-6">
                 <div className="flex items-center gap-3 mb-4">
                   <Android className="w-8 h-8 text-white" />
-                  <h3 className="text-xl font-semibold">Android</h3>
+                  <h3 className="text-xl font-semibold text-white">Android</h3>
                 </div>
                 <p className="text-white/80 mb-4">
                   {t('helpCenter.articles.mobileApp.download.android.description')}
@@ -134,7 +134,7 @@ export default function MobileApp(props: any) {
                 <div key={index} className="flex gap-3 p-4 bg-white/5 rounded-lg">
                   <feature.icon className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-1">{feature.title}</h3>
+                    <h3 className="font-semibold mb-1 text-white">{feature.title}</h3>
                     <p className="text-white/80 text-sm">{feature.description}</p>
                   </div>
                 </div>
@@ -179,7 +179,7 @@ export default function MobileApp(props: any) {
             <div className="grid md:grid-cols-2 gap-4">
               <Link href="/help-center/getting-started/desktop-mobile">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.mobileApp.related.desktopMobile')}
                   </h3>
                   <p className="text-white/60 text-sm">
@@ -189,7 +189,7 @@ export default function MobileApp(props: any) {
               </Link>
               <Link href="/help-center/getting-started/first-followers">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.mobileApp.related.firstFollowers')}
                   </h3>
                   <p className="text-white/60 text-sm">

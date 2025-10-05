@@ -101,7 +101,7 @@ export default function ProfilePictures(props: any) {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">{req.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-white">{req.title}</h3>
                     <p className="text-white/80">{req.description}</p>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function ProfilePictures(props: any) {
                   1
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">
+                  <h3 className="font-semibold mb-1 text-white">
                     {t('helpCenter.articles.profilePictures.upload.step1.title')}
                   </h3>
                   <p className="text-white/80">
@@ -140,7 +140,7 @@ export default function ProfilePictures(props: any) {
                   2
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">
+                  <h3 className="font-semibold mb-1 text-white">
                     {t('helpCenter.articles.profilePictures.upload.step2.title')}
                   </h3>
                   <p className="text-white/80">
@@ -154,7 +154,7 @@ export default function ProfilePictures(props: any) {
                   3
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">
+                  <h3 className="font-semibold mb-1 text-white">
                     {t('helpCenter.articles.profilePictures.upload.step3.title')}
                   </h3>
                   <p className="text-white/80">
@@ -245,7 +245,7 @@ export default function ProfilePictures(props: any) {
             <div className="grid md:grid-cols-2 gap-4">
               <Link href="/help-center/account-profile/update-profile">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.profilePictures.related.updateProfile')}
                   </h3>
                   <p className="text-white/60 text-sm">
@@ -255,7 +255,7 @@ export default function ProfilePictures(props: any) {
               </Link>
               <Link href="/help-center/account-profile/change-username">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.profilePictures.related.changeUsername')}
                   </h3>
                   <p className="text-white/60 text-sm">

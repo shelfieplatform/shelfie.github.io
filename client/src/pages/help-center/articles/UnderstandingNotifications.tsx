@@ -113,7 +113,7 @@ export default function UnderstandingNotifications(props: any) {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">{type.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-white">{type.title}</h3>
                     <p className="text-white/80 mb-4">{type.description}</p>
                     <h4 className="font-semibold text-white mb-3">
                       {t('helpCenter.articles.understandingNotifications.examples.title')}
@@ -204,7 +204,7 @@ export default function UnderstandingNotifications(props: any) {
             <div className="grid md:grid-cols-2 gap-4">
               <Link href="/help-center/getting-started/basic-security-tips">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.understandingNotifications.related.securityTips')}
                   </h3>
                   <p className="text-white/60 text-sm">
@@ -214,7 +214,7 @@ export default function UnderstandingNotifications(props: any) {
               </Link>
               <Link href="/help-center/getting-started/platform-tour">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.understandingNotifications.related.platformTour')}
                   </h3>
                   <p className="text-white/60 text-sm">

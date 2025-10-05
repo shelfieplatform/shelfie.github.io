@@ -129,7 +129,7 @@ export default function WelcomeToShelfie(props: any) {
                 {t('helpCenter.articles.welcome.introduction.content')}
               </p>
               <div className="bg-white/5 rounded-lg p-6">
-                <h3 className="font-semibold mb-3">
+                <h3 className="font-semibold mb-3 text-white">
                   {t('helpCenter.articles.welcome.introduction.highlight')}
                 </h3>
                 <p className="text-white/80 text-sm">
@@ -154,7 +154,7 @@ export default function WelcomeToShelfie(props: any) {
                       <feature.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">
+                      <h3 className="font-semibold text-lg mb-2 text-white">
                         {feature.title}
                       </h3>
                       <p className="text-white/80 text-sm">
@@ -198,7 +198,7 @@ export default function WelcomeToShelfie(props: any) {
               </h2>
               <div className="space-y-4">
                 <div className="bg-white/5 rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.welcome.tips.tip1.title')}
                   </h3>
                   <p className="text-white/80 text-sm">
@@ -206,7 +206,7 @@ export default function WelcomeToShelfie(props: any) {
                   </p>
                 </div>
                 <div className="bg-white/5 rounded-lg p-4">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.welcome.tips.tip2.title')}
                   </h3>
                   <p className="text-white/80 text-sm">

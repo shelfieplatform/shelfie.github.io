@@ -116,7 +116,7 @@ export default function AccountSettings(props: any) {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">{category.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-white">{category.title}</h3>
                     <p className="text-white/80 mb-4">{category.description}</p>
                     <h4 className="font-semibold text-white mb-3">
                       {t('helpCenter.articles.accountSettings.availableSettings')}
@@ -152,7 +152,7 @@ export default function AccountSettings(props: any) {
                   1
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">
+                  <h3 className="font-semibold mb-1 text-white">
                     {t('helpCenter.articles.accountSettings.access.step1.title')}
                   </h3>
                   <p className="text-white/80">
@@ -166,7 +166,7 @@ export default function AccountSettings(props: any) {
                   2
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">
+                  <h3 className="font-semibold mb-1 text-white">
                     {t('helpCenter.articles.accountSettings.access.step2.title')}
                   </h3>
                   <p className="text-white/80">
@@ -180,7 +180,7 @@ export default function AccountSettings(props: any) {
                   3
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">
+                  <h3 className="font-semibold mb-1 text-white">
                     {t('helpCenter.articles.accountSettings.access.step3.title')}
                   </h3>
                   <p className="text-white/80">
@@ -239,7 +239,7 @@ export default function AccountSettings(props: any) {
             <div className="grid md:grid-cols-2 gap-4">
               <Link href="/help-center/account-profile/profile-pictures">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.accountSettings.related.profilePictures')}
                   </h3>
                   <p className="text-white/60 text-sm">
@@ -249,7 +249,7 @@ export default function AccountSettings(props: any) {
               </Link>
               <Link href="/help-center/privacy-security/privacy-settings">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.accountSettings.related.privacySettings')}
                   </h3>
                   <p className="text-white/60 text-sm">

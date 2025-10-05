@@ -116,7 +116,7 @@ export default function PrivacySettings(props: any) {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2">{level.title}</h3>
+                    <h3 className="text-xl font-semibold mb-2 text-white">{level.title}</h3>
                     <p className="text-white/80 mb-4">{level.description}</p>
                     <ul className="space-y-2">
                       {level.features.map((feature, featureIndex) => (
@@ -232,7 +232,7 @@ export default function PrivacySettings(props: any) {
             <div className="grid md:grid-cols-2 gap-4">
               <Link href="/help-center/getting-started/mobile-app">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.privacySettings.related.mobileApp')}
                   </h3>
                   <p className="text-white/60 text-sm">
@@ -242,7 +242,7 @@ export default function PrivacySettings(props: any) {
               </Link>
               <Link href="/help-center/getting-started/desktop-mobile">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2">
+                  <h3 className="font-semibold mb-2 text-white">
                     {t('helpCenter.articles.privacySettings.related.desktopMobile')}
                   </h3>
                   <p className="text-white/60 text-sm">

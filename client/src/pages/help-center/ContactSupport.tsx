@@ -135,7 +135,7 @@ export default function ContactSupport(props: any) {
                   <div className="inline-flex items-center justify-center w-12 h-12 bg-white/10 rounded-full mb-4">
                     <option.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">
+                  <h3 className="font-semibold text-lg mb-2 text-white">
                     {option.title}
                   </h3>
                   <p className="text-white/70 text-sm mb-4">
@@ -164,7 +164,7 @@ export default function ContactSupport(props: any) {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-white">
                       {t('helpCenter.contact.form.name')}
                     </label>
                     <Input
@@ -177,7 +177,7 @@ export default function ContactSupport(props: any) {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-white">
                       {t('helpCenter.contact.form.email')}
                     </label>
                     <Input
@@ -192,7 +192,7 @@ export default function ContactSupport(props: any) {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">
+                  <label className="block text-sm font-medium mb-2 text-white">
                     {t('helpCenter.contact.form.subject')}
                   </label>
                   <Input
@@ -205,7 +205,7 @@ export default function ContactSupport(props: any) {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">
+                  <label className="block text-sm font-medium mb-2 text-white">
                     {t('helpCenter.contact.form.message')}
                   </label>
                   <Textarea

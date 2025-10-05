@@ -97,7 +97,7 @@ export default function BugReports(props: any) {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-white">
                       {t('helpCenter.contact.form.name')}
                     </label>
                     <Input
@@ -110,7 +110,7 @@ export default function BugReports(props: any) {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-white">
                       {t('helpCenter.contact.form.email')}
                     </label>
                     <Input
@@ -125,7 +125,7 @@ export default function BugReports(props: any) {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">
+                  <label className="block text-sm font-medium mb-2 text-white">
                     {t('helpCenter.contact.form.subject')}
                   </label>
                   <Input
@@ -139,7 +139,7 @@ export default function BugReports(props: any) {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-white">
                       {t('helpCenter.contact.bugReports.device')}
                     </label>
                     <select
@@ -163,7 +163,7 @@ export default function BugReports(props: any) {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">
+                    <label className="block text-sm font-medium mb-2 text-white">
                       {t('helpCenter.contact.bugReports.browser')}
                     </label>
                     <Input
@@ -176,7 +176,7 @@ export default function BugReports(props: any) {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">
+                  <label className="block text-sm font-medium mb-2 text-white">
                     {t('helpCenter.contact.bugReports.steps')}
                   </label>
                   <Textarea
@@ -190,7 +190,7 @@ export default function BugReports(props: any) {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">
+                  <label className="block text-sm font-medium mb-2 text-white">
                     {t('helpCenter.contact.form.message')}
                   </label>
                   <Textarea
