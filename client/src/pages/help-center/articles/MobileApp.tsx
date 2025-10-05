@@ -78,14 +78,14 @@ export default function MobileApp(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.mobileApp.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.mobileApp.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.mobileApp.introduction.tipContent')}
                   </p>
                 </div>
@@ -177,11 +177,11 @@ export default function MobileApp(props: any) {
             </p>
             
             <div className="space-y-4">
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.mobileApp.installation.steps.title')}
                 </h3>
-                <ol className="text-blue-100 space-y-2">
+                <ol className="text-purple-100 space-y-2">
                   <li>1. {t('helpCenter.articles.mobileApp.installation.steps.step1')}</li>
                   <li>2. {t('helpCenter.articles.mobileApp.installation.steps.step2')}</li>
                   <li>3. {t('helpCenter.articles.mobileApp.installation.steps.step3')}</li>

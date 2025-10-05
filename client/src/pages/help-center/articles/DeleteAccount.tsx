@@ -65,22 +65,22 @@ export default function DeleteAccount(props: any) {
         </div>
 
         {/* Warning */}
-        <Card className="mb-8 bg-red-500/20 border-red-400/30">
+        <Card className="mb-8 bg-amber-500/20 border-amber-400/30">
           <CardContent className="p-6">
             <div className="flex items-start gap-4">
-              <AlertTriangle className="w-8 h-8 text-red-400 flex-shrink-0 mt-1" />
+              <AlertTriangle className="w-8 h-8 text-amber-400 flex-shrink-0 mt-1" />
               <div>
-                <h2 className="text-2xl font-bold mb-4 text-red-200">
+                <h2 className="text-2xl font-bold mb-4 text-amber-200">
                   {t('helpCenter.articles.deleteAccount.warning.title')}
                 </h2>
-                <p className="text-red-100 mb-4">
+                <p className="text-amber-100 mb-4">
                   {t('helpCenter.articles.deleteAccount.warning.content')}
                 </p>
                 <div className="bg-red-600/20 border border-red-500/30 rounded-lg p-4">
-                  <h3 className="font-semibold text-red-200 mb-2">
+                  <h3 className="font-semibold text-amber-200 mb-2">
                     {t('helpCenter.articles.deleteAccount.warning.important')}
                   </h3>
-                  <p className="text-red-100">
+                  <p className="text-amber-100">
                     {t('helpCenter.articles.deleteAccount.warning.importantContent')}
                   </p>
                 </div>
@@ -198,14 +198,14 @@ export default function DeleteAccount(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.deleteAccount.alternatives.privacy.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.deleteAccount.alternatives.privacy.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.deleteAccount.alternatives.privacy.benefit1')}</li>
                   <li>• {t('helpCenter.articles.deleteAccount.alternatives.privacy.benefit2')}</li>
                   <li>• {t('helpCenter.articles.deleteAccount.alternatives.privacy.benefit3')}</li>

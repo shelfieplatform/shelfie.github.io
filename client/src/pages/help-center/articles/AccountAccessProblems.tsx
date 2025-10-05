@@ -88,14 +88,14 @@ export default function AccountAccessProblems(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.accountAccessProblems.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <Lock className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <Lock className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.accountAccessProblems.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.accountAccessProblems.introduction.tipContent')}
                   </p>
                 </div>
@@ -217,14 +217,14 @@ export default function AccountAccessProblems(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.accountAccessProblems.accountRecovery.supportRecovery.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.accountAccessProblems.accountRecovery.supportRecovery.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.accountAccessProblems.accountRecovery.supportRecovery.step1')}</li>
                   <li>• {t('helpCenter.articles.accountAccessProblems.accountRecovery.supportRecovery.step2')}</li>
                   <li>• {t('helpCenter.articles.accountAccessProblems.accountRecovery.supportRecovery.step3')}</li>
@@ -259,14 +259,14 @@ export default function AccountAccessProblems(props: any) {
                 </div>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
                 <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <Mail className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-blue-200 mb-2">
+                    <h3 className="font-semibold text-purple-200 mb-2">
                       {t('helpCenter.articles.accountAccessProblems.securityMeasures.emailVerification.title')}
                     </h3>
-                    <p className="text-blue-100">
+                    <p className="text-purple-100">
                       {t('helpCenter.articles.accountAccessProblems.securityMeasures.emailVerification.content')}
                     </p>
                   </div>
@@ -301,28 +301,28 @@ export default function AccountAccessProblems(props: any) {
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-red-200 mb-2">
+              <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-amber-200 mb-2">
                   {t('helpCenter.articles.accountAccessProblems.preventionTips.strongPassword.title')}
                 </h3>
-                <p className="text-red-100 mb-2">
+                <p className="text-amber-100 mb-2">
                   {t('helpCenter.articles.accountAccessProblems.preventionTips.strongPassword.description')}
                 </p>
-                <ul className="text-red-100 space-y-1 text-sm">
+                <ul className="text-amber-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.accountAccessProblems.preventionTips.strongPassword.tip1')}</li>
                   <li>• {t('helpCenter.articles.accountAccessProblems.preventionTips.strongPassword.tip2')}</li>
                   <li>• {t('helpCenter.articles.accountAccessProblems.preventionTips.strongPassword.tip3')}</li>
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.accountAccessProblems.preventionTips.regularUpdates.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.accountAccessProblems.preventionTips.regularUpdates.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.accountAccessProblems.preventionTips.regularUpdates.tip1')}</li>
                   <li>• {t('helpCenter.articles.accountAccessProblems.preventionTips.regularUpdates.tip2')}</li>
                   <li>• {t('helpCenter.articles.accountAccessProblems.preventionTips.regularUpdates.tip3')}</li>

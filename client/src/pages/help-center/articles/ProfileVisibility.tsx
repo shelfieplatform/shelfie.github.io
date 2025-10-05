@@ -88,14 +88,14 @@ export default function ProfileVisibility(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.profileVisibility.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <Eye className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <Eye className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.profileVisibility.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.profileVisibility.introduction.tipContent')}
                   </p>
                 </div>
@@ -216,14 +216,14 @@ export default function ProfileVisibility(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.profileVisibility.whatOthersCanSee.private.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.profileVisibility.whatOthersCanSee.private.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.profileVisibility.whatOthersCanSee.private.tip1')}</li>
                   <li>• {t('helpCenter.articles.profileVisibility.whatOthersCanSee.private.tip2')}</li>
                 </ul>
@@ -261,11 +261,11 @@ export default function ProfileVisibility(props: any) {
                 </p>
               </div>
               
-              <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-red-200 mb-2">
+              <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-amber-200 mb-2">
                   {t('helpCenter.articles.profileVisibility.considerations.control.title')}
                 </h3>
-                <p className="text-red-100 text-sm">
+                <p className="text-amber-100 text-sm">
                   {t('helpCenter.articles.profileVisibility.considerations.control.description')}
                 </p>
               </div>
@@ -298,14 +298,14 @@ export default function ProfileVisibility(props: any) {
                 </div>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
                 <div className="flex items-start gap-3">
-                  <Settings className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <Settings className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-blue-200 mb-2">
+                    <h3 className="font-semibold text-purple-200 mb-2">
                       {t('helpCenter.articles.profileVisibility.tips.tip2.title')}
                     </h3>
-                    <p className="text-blue-100">
+                    <p className="text-purple-100">
                       {t('helpCenter.articles.profileVisibility.tips.tip2.content')}
                     </p>
                   </div>

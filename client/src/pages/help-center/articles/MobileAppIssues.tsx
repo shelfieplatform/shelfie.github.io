@@ -88,14 +88,14 @@ export default function MobileAppIssues(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.mobileAppIssues.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <Smartphone className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <Smartphone className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.mobileAppIssues.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.mobileAppIssues.introduction.tipContent')}
                   </p>
                 </div>
@@ -217,14 +217,14 @@ export default function MobileAppIssues(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.mobileAppIssues.deviceRequirements.android.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.mobileAppIssues.deviceRequirements.android.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.mobileAppIssues.deviceRequirements.android.requirement1')}</li>
                   <li>• {t('helpCenter.articles.mobileAppIssues.deviceRequirements.android.requirement2')}</li>
                   <li>• {t('helpCenter.articles.mobileAppIssues.deviceRequirements.android.requirement3')}</li>
@@ -259,14 +259,14 @@ export default function MobileAppIssues(props: any) {
                 </div>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
                 <div className="flex items-start gap-3">
-                  <Settings className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <Settings className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-blue-200 mb-2">
+                    <h3 className="font-semibold text-purple-200 mb-2">
                       {t('helpCenter.articles.mobileAppIssues.performanceOptimization.storage.title')}
                     </h3>
-                    <p className="text-blue-100">
+                    <p className="text-purple-100">
                       {t('helpCenter.articles.mobileAppIssues.performanceOptimization.storage.content')}
                     </p>
                   </div>
@@ -301,28 +301,28 @@ export default function MobileAppIssues(props: any) {
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-red-200 mb-2">
+              <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-amber-200 mb-2">
                   {t('helpCenter.articles.mobileAppIssues.updateIssues.updateFailed.title')}
                 </h3>
-                <p className="text-red-100 mb-2">
+                <p className="text-amber-100 mb-2">
                   {t('helpCenter.articles.mobileAppIssues.updateIssues.updateFailed.description')}
                 </p>
-                <ul className="text-red-100 space-y-1 text-sm">
+                <ul className="text-amber-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.updateFailed.solution1')}</li>
                   <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.updateIssues.updateFailed.solution2')}</li>
                   <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.updateFailed.solution3')}</li>
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.mobileAppIssues.updateIssues.autoUpdate.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.mobileAppIssues.updateIssues.autoUpdate.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.autoUpdate.step1')}</li>
                   <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.autoUpdate.step2')}</li>
                   <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.autoUpdate.step3')}</li>

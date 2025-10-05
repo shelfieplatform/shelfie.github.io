@@ -88,14 +88,14 @@ export default function ErrorMessages(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.errorMessages.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <AlertTriangle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.errorMessages.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.errorMessages.introduction.tipContent')}
                   </p>
                 </div>
@@ -203,28 +203,28 @@ export default function ErrorMessages(props: any) {
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-red-200 mb-2">
+              <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-amber-200 mb-2">
                   {t('helpCenter.articles.errorMessages.errorTypes.clientErrors.title')}
                 </h3>
-                <p className="text-red-100 mb-2">
+                <p className="text-amber-100 mb-2">
                   {t('helpCenter.articles.errorMessages.errorTypes.clientErrors.description')}
                 </p>
-                <ul className="text-red-100 space-y-1 text-sm">
+                <ul className="text-amber-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.errorMessages.errorTypes.clientErrors.example1')}</li>
                   <li>• {t('helpCenter.articles.errorMessages.errorTypes.clientErrors.example2')}</li>
                   <li>• {t('helpCenter.articles.errorMessages.errorTypes.clientErrors.example3')}</li>
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.errorMessages.errorTypes.serverErrors.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.errorMessages.errorTypes.serverErrors.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.errorMessages.errorTypes.serverErrors.example1')}</li>
                   <li>• {t('helpCenter.articles.errorMessages.errorTypes.serverErrors.example2')}</li>
                   <li>• {t('helpCenter.articles.errorMessages.errorTypes.serverErrors.example3')}</li>
@@ -259,14 +259,14 @@ export default function ErrorMessages(props: any) {
                 </div>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
                 <div className="flex items-start gap-3">
-                  <AlertCircle className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <AlertCircle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-blue-200 mb-2">
+                    <h3 className="font-semibold text-purple-200 mb-2">
                       {t('helpCenter.articles.errorMessages.troubleshootingSteps.checkLogs.title')}
                     </h3>
-                    <p className="text-blue-100">
+                    <p className="text-purple-100">
                       {t('helpCenter.articles.errorMessages.troubleshootingSteps.checkLogs.content')}
                     </p>
                   </div>
@@ -315,14 +315,14 @@ export default function ErrorMessages(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.errorMessages.preventionTips.stableConnection.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.errorMessages.preventionTips.stableConnection.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.errorMessages.preventionTips.stableConnection.tip1')}</li>
                   <li>• {t('helpCenter.articles.errorMessages.preventionTips.stableConnection.tip2')}</li>
                   <li>• {t('helpCenter.articles.errorMessages.preventionTips.stableConnection.tip3')}</li>

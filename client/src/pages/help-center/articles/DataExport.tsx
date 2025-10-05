@@ -78,14 +78,14 @@ export default function DataExport(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.dataExport.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <Download className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <Download className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.dataExport.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.dataExport.introduction.tipContent')}
                   </p>
                 </div>
@@ -217,14 +217,14 @@ export default function DataExport(props: any) {
                 </p>
               </div>
               
-              <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
+              <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
                 <div className="flex items-center gap-3 mb-3">
-                  <Clock className="w-5 h-5 text-red-400" />
-                  <h3 className="font-semibold text-red-200">
+                  <Clock className="w-5 h-5 text-amber-400" />
+                  <h3 className="font-semibold text-amber-200">
                     {t('helpCenter.articles.dataExport.timing.large.title')}
                   </h3>
                 </div>
-                <p className="text-red-100 text-sm">
+                <p className="text-amber-100 text-sm">
                   {t('helpCenter.articles.dataExport.timing.large.description')}
                 </p>
               </div>
@@ -243,14 +243,14 @@ export default function DataExport(props: any) {
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.dataExport.formats.json.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.dataExport.formats.json.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.dataExport.formats.json.benefit1')}</li>
                   <li>• {t('helpCenter.articles.dataExport.formats.json.benefit2')}</li>
                 </ul>
@@ -293,14 +293,14 @@ export default function DataExport(props: any) {
                 </div>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-blue-200 mb-2">
+                    <h3 className="font-semibold text-purple-200 mb-2">
                       {t('helpCenter.articles.dataExport.important.note2.title')}
                     </h3>
-                    <p className="text-blue-100">
+                    <p className="text-purple-100">
                       {t('helpCenter.articles.dataExport.important.note2.content')}
                     </p>
                   </div>

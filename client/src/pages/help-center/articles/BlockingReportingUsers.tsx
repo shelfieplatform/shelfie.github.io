@@ -88,14 +88,14 @@ export default function BlockingReportingUsers(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.blockingReportingUsers.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <Shield className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <Shield className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.blockingReportingUsers.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.blockingReportingUsers.introduction.tipContent')}
                   </p>
                 </div>
@@ -272,14 +272,14 @@ export default function BlockingReportingUsers(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.blockingReportingUsers.whatHappens.reported.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.blockingReportingUsers.whatHappens.reported.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.blockingReportingUsers.whatHappens.reported.tip1')}</li>
                   <li>• {t('helpCenter.articles.blockingReportingUsers.whatHappens.reported.tip2')}</li>
                 </ul>
@@ -313,14 +313,14 @@ export default function BlockingReportingUsers(props: any) {
                 </div>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-blue-200 mb-2">
+                    <h3 className="font-semibold text-purple-200 mb-2">
                       {t('helpCenter.articles.blockingReportingUsers.important.note2.title')}
                     </h3>
-                    <p className="text-blue-100">
+                    <p className="text-purple-100">
                       {t('helpCenter.articles.blockingReportingUsers.important.note2.content')}
                     </p>
                   </div>

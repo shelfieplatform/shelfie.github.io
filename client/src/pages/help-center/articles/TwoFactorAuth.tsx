@@ -215,26 +215,26 @@ export default function TwoFactorAuth(props: any) {
               {t('helpCenter.articles.twoFactorAuth.troubleshooting.title')}
             </h2>
             <div className="space-y-4">
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.twoFactorAuth.troubleshooting.issue1.title')}
                 </h3>
-                <p className="text-blue-100 mb-2">
+                <p className="text-purple-100 mb-2">
                   {t('helpCenter.articles.twoFactorAuth.troubleshooting.issue1.description')}
                 </p>
-                <p className="text-blue-100 text-sm">
+                <p className="text-purple-100 text-sm">
                   {t('helpCenter.articles.twoFactorAuth.troubleshooting.issue1.solution')}
                 </p>
               </div>
               
-              <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-red-200 mb-2">
+              <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-amber-200 mb-2">
                   {t('helpCenter.articles.twoFactorAuth.troubleshooting.issue2.title')}
                 </h3>
-                <p className="text-red-100 mb-2">
+                <p className="text-amber-100 mb-2">
                   {t('helpCenter.articles.twoFactorAuth.troubleshooting.issue2.description')}
                 </p>
-                <p className="text-red-100 text-sm">
+                <p className="text-amber-100 text-sm">
                   {t('helpCenter.articles.twoFactorAuth.troubleshooting.issue2.solution')}
                 </p>
               </div>

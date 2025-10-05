@@ -88,14 +88,14 @@ export default function Dashboard(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.dashboard.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <CheckCircle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.dashboard.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.dashboard.introduction.tipContent')}
                   </p>
                 </div>
@@ -155,11 +155,11 @@ export default function Dashboard(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-blue-200 mb-2">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-purple-200 mb-2">
                   {t('helpCenter.articles.dashboard.quickActions.social.title')}
                 </h3>
-                <ul className="text-blue-100 space-y-1">
+                <ul className="text-purple-100 space-y-1">
                   <li>• {t('helpCenter.articles.dashboard.quickActions.social.action1')}</li>
                   <li>• {t('helpCenter.articles.dashboard.quickActions.social.action2')}</li>
                   <li>• {t('helpCenter.articles.dashboard.quickActions.social.action3')}</li>

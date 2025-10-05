@@ -42,13 +42,6 @@ export default function AccountProfile(props: any) {
       estimatedTime: "2 min read"
     },
     {
-      title: t('helpCenter.accountProfile.connectedAccounts.title'),
-      description: t('helpCenter.accountProfile.connectedAccounts.description'),
-      icon: Settings,
-      href: "/help-center/account-profile/connected-accounts",
-      estimatedTime: "4 min read"
-    },
-    {
       title: t('helpCenter.accountProfile.securitySettings.title'),
       description: t('helpCenter.accountProfile.securitySettings.description'),
       icon: Shield,

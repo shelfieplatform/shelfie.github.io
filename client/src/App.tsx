@@ -105,6 +105,7 @@ function Router() {
       <Route path="/help-center/contact" component={ContactSupport} />
       
       {/* Individual Articles - Getting Started */}
+      <Route path="/help-center/getting-started/welcome" component={WelcomeToShelfie} />
       <Route path="/help-center/getting-started/welcome-to-shelfie" component={WelcomeToShelfie} />
       <Route path="/help-center/getting-started/creating-account" component={CreatingAccount} />
       <Route path="/help-center/getting-started/setting-up-profile" component={SettingUpProfile} />
@@ -113,8 +114,11 @@ function Router() {
       <Route path="/help-center/getting-started/mobile-app" component={MobileApp} />
       <Route path="/help-center/getting-started/desktop-mobile" component={DesktopMobile} />
       <Route path="/help-center/getting-started/understanding-notifications" component={UnderstandingNotifications} />
+      <Route path="/help-center/getting-started/security-tips" component={BasicSecurityTips} />
       <Route path="/help-center/getting-started/basic-security-tips" component={BasicSecurityTips} />
+      <Route path="/help-center/getting-started/first-followers" component={GettingFirstFollowers} />
       <Route path="/help-center/getting-started/getting-first-followers" component={GettingFirstFollowers} />
+      <Route path="/help-center/getting-started/following-users" component={FollowingOtherUsers} />
       <Route path="/help-center/getting-started/following-other-users" component={FollowingOtherUsers} />
       <Route path="/help-center/getting-started/platform-tour" component={PlatformTour} />
       
@@ -131,6 +135,13 @@ function Router() {
       <Route path="/help-center/account-profile/data-export" component={DataExport} />
       <Route path="/help-center/account-profile/blocking-reporting" component={BlockingReporting} />
       <Route path="/help-center/account-profile/account-recovery" component={AccountRecovery} />
+      
+      {/* Additional Account Profile Routes */}
+      <Route path="/help-center/account-profile/setting-bio" component={UpdateProfile} />
+      <Route path="/help-center/account-profile/security-settings" component={TwoFactorAuth} />
+      <Route path="/help-center/account-profile/password-management" component={AccountSettings} />
+      <Route path="/help-center/account-profile/account-deactivation" component={DeleteAccount} />
+      <Route path="/help-center/account-profile/profile-visibility" component={UpdateProfile} />
       
       {/* Individual Articles - Adding Favorites */}
       <Route path="/help-center/adding-favorites/adding-books" component={AddingBooks} />

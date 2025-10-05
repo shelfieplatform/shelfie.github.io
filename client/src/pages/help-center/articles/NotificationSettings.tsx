@@ -88,14 +88,14 @@ export default function NotificationSettings(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.notificationSettings.introduction.content')}
             </p>
-            <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+            <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <Bell className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <Bell className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-blue-200 mb-2">
+                  <h3 className="font-semibold text-purple-200 mb-2">
                     {t('helpCenter.articles.notificationSettings.introduction.tip')}
                   </h3>
-                  <p className="text-blue-100">
+                  <p className="text-purple-100">
                     {t('helpCenter.articles.notificationSettings.introduction.tipContent')}
                   </p>
                 </div>
@@ -164,17 +164,17 @@ export default function NotificationSettings(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
                 <div className="flex items-center gap-3 mb-3">
-                  <Monitor className="w-5 h-5 text-blue-400" />
-                  <h3 className="font-semibold text-blue-200">
+                  <Monitor className="w-5 h-5 text-purple-400" />
+                  <h3 className="font-semibold text-purple-200">
                     {t('helpCenter.articles.notificationSettings.devices.desktop.title')}
                   </h3>
                 </div>
-                <p className="text-blue-100 mb-3">
+                <p className="text-purple-100 mb-3">
                   {t('helpCenter.articles.notificationSettings.devices.desktop.description')}
                 </p>
-                <ul className="text-blue-100 space-y-1 text-sm">
+                <ul className="text-purple-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.notificationSettings.devices.desktop.setting1')}</li>
                   <li>• {t('helpCenter.articles.notificationSettings.devices.desktop.setting2')}</li>
                   <li>• {t('helpCenter.articles.notificationSettings.devices.desktop.setting3')}</li>
@@ -262,11 +262,11 @@ export default function NotificationSettings(props: any) {
                 </ul>
               </div>
               
-              <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-red-200 mb-2">
+              <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-amber-200 mb-2">
                   {t('helpCenter.articles.notificationSettings.bestPractices.disable.title')}
                 </h3>
-                <ul className="text-red-100 space-y-1">
+                <ul className="text-amber-100 space-y-1">
                   <li>• {t('helpCenter.articles.notificationSettings.bestPractices.disable.tip1')}</li>
                   <li>• {t('helpCenter.articles.notificationSettings.bestPractices.disable.tip2')}</li>
                   <li>• {t('helpCenter.articles.notificationSettings.bestPractices.disable.tip3')}</li>

@@ -88,14 +88,14 @@ export default function BasicSecurityTips(props: any) {
             <p className="text-white/80 mb-4">
               {t('helpCenter.articles.basicSecurityTips.introduction.content')}
             </p>
-            <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
+            <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
+                <AlertTriangle className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-red-200 mb-2">
+                  <h3 className="font-semibold text-amber-200 mb-2">
                     {t('helpCenter.articles.basicSecurityTips.introduction.important')}
                   </h3>
-                  <p className="text-red-100">
+                  <p className="text-amber-100">
                     {t('helpCenter.articles.basicSecurityTips.introduction.importantContent')}
                   </p>
                 </div>
@@ -144,14 +144,14 @@ export default function BasicSecurityTips(props: any) {
             </p>
             
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-red-500/20 border border-red-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-red-200 mb-2">
+              <div className="bg-amber-500/20 border border-amber-400/30 rounded-lg p-4">
+                <h3 className="font-semibold text-amber-200 mb-2">
                   {t('helpCenter.articles.basicSecurityTips.threats.phishing.title')}
                 </h3>
-                <p className="text-red-100 mb-2">
+                <p className="text-amber-100 mb-2">
                   {t('helpCenter.articles.basicSecurityTips.threats.phishing.description')}
                 </p>
-                <ul className="text-red-100 space-y-1 text-sm">
+                <ul className="text-amber-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.basicSecurityTips.threats.phishing.warning1')}</li>
                   <li>• {t('helpCenter.articles.basicSecurityTips.threats.phishing.warning2')}</li>
                   <li>• {t('helpCenter.articles.basicSecurityTips.threats.phishing.warning3')}</li>
