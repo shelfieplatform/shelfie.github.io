@@ -50,7 +50,7 @@ export default function CreatingAccount(props: any) {
                 <span className="text-lg sm:text-xl font-bold text-white">Shelfie</span>
               </Link>
             </div>
-            <h1 className="text-lg sm:text-xl font-bold">{t('helpCenter.articles.creatingAccount.title')}</h1>
+            <h1 className="text-lg sm:text-xl font-bold text-white">{t('helpCenter.articles.creatingAccount.title')}</h1>
             <div className="w-20" />
           </div>
         </div>
@@ -60,7 +60,7 @@ export default function CreatingAccount(props: any) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Article Header */}
         <div className="mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
             {t('helpCenter.articles.creatingAccount.title')}
           </h1>
           <p className="text-xl text-white/80 mb-6">
@@ -76,7 +76,7 @@ export default function CreatingAccount(props: any) {
         {/* Introduction */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.creatingAccount.introduction.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -101,7 +101,7 @@ export default function CreatingAccount(props: any) {
         {/* Account Creation Steps */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-2xl font-bold mb-6 text-white">
               {t('helpCenter.articles.creatingAccount.steps.title')}
             </h2>
             
@@ -126,7 +126,7 @@ export default function CreatingAccount(props: any) {
         {/* Username Requirements */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.creatingAccount.username.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -163,7 +163,7 @@ export default function CreatingAccount(props: any) {
         {/* Verification Process */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.creatingAccount.verification.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -189,7 +189,7 @@ export default function CreatingAccount(props: any) {
         {/* Related Articles */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.creatingAccount.related.title')}
             </h2>
             <div className="grid md:grid-cols-2 gap-4">

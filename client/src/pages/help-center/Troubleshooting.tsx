@@ -125,7 +125,7 @@ export default function Troubleshooting(props: any) {
                 </Button>
               </Link>
             )}
-            <h1 className="text-lg sm:text-xl font-bold">
+            <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.categories.troubleshooting.title')}
             </h1>
             <div className="w-20" />
@@ -140,7 +140,7 @@ export default function Troubleshooting(props: any) {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4">
             <Wrench className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
             {t('helpCenter.categories.troubleshooting.title')}
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">

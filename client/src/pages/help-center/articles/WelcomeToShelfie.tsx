@@ -93,7 +93,7 @@ export default function WelcomeToShelfie(props: any) {
                 <span className="text-lg sm:text-xl font-bold text-white">Shelfie</span>
               </Link>
             </div>
-            <h1 className="text-lg sm:text-xl font-bold">
+            <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.articles.welcome.title')}
             </h1>
             <div className="w-20" />
@@ -105,7 +105,7 @@ export default function WelcomeToShelfie(props: any) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         {/* Article Header */}
         <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
             {t('helpCenter.articles.welcome.title')}
           </h1>
           <p className="text-lg text-white/80 mb-6">
@@ -122,7 +122,7 @@ export default function WelcomeToShelfie(props: any) {
         <div className="mb-12">
           <Card className="bg-white/10 border-white/20">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-2xl font-bold mb-4 text-white">
                 {t('helpCenter.articles.welcome.introduction.title')}
               </h2>
               <p className="text-white/80 leading-relaxed mb-6">
@@ -142,7 +142,7 @@ export default function WelcomeToShelfie(props: any) {
 
         {/* Key Features */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-8 text-center">
+          <h2 className="text-2xl font-bold mb-8 text-center text-white">
             {t('helpCenter.articles.welcome.features.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -172,7 +172,7 @@ export default function WelcomeToShelfie(props: any) {
         <div className="mb-12">
           <Card className="bg-white/10 border-white/20">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-6">
+              <h2 className="text-2xl font-bold mb-6 text-white">
                 {t('helpCenter.articles.welcome.steps.title')}
               </h2>
               <div className="space-y-4">
@@ -193,7 +193,7 @@ export default function WelcomeToShelfie(props: any) {
         <div className="mb-12">
           <Card className="bg-white/10 border-white/20">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-6">
+              <h2 className="text-2xl font-bold mb-6 text-white">
                 {t('helpCenter.articles.welcome.tips.title')}
               </h2>
               <div className="space-y-4">
@@ -220,7 +220,7 @@ export default function WelcomeToShelfie(props: any) {
 
         {/* Related Articles */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-6 text-center">
+          <h2 className="text-2xl font-bold mb-6 text-center text-white">
             {t('helpCenter.articles.welcome.related.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

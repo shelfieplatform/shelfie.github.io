@@ -56,7 +56,7 @@ export default function PrivacySettings(props: any) {
                 {t('helpCenter.backToCategory')}
               </Button>
             </Link>
-            <h1 className="text-lg sm:text-xl font-bold">{t('helpCenter.articles.privacySettings.title')}</h1>
+            <h1 className="text-lg sm:text-xl font-bold text-white">{t('helpCenter.articles.privacySettings.title')}</h1>
             <div className="w-20" />
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function PrivacySettings(props: any) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Article Header */}
         <div className="mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
             {t('helpCenter.articles.privacySettings.title')}
           </h1>
           <p className="text-xl text-white/80 mb-6">
@@ -82,7 +82,7 @@ export default function PrivacySettings(props: any) {
         {/* Introduction */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.privacySettings.introduction.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -136,7 +136,7 @@ export default function PrivacySettings(props: any) {
         {/* Profile Visibility */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.privacySettings.profileVisibility.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -172,7 +172,7 @@ export default function PrivacySettings(props: any) {
         {/* Content Privacy */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.privacySettings.contentPrivacy.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -200,7 +200,7 @@ export default function PrivacySettings(props: any) {
         {/* Activity Privacy */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.privacySettings.activityPrivacy.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -226,7 +226,7 @@ export default function PrivacySettings(props: any) {
         {/* Related Articles */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.privacySettings.related.title')}
             </h2>
             <div className="grid md:grid-cols-2 gap-4">

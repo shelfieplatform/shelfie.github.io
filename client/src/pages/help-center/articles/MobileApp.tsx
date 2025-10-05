@@ -36,7 +36,7 @@ export default function MobileApp(props: any) {
                 {t('helpCenter.backToCategory')}
               </Button>
             </Link>
-            <h1 className="text-lg sm:text-xl font-bold">{t('helpCenter.articles.mobileApp.title')}</h1>
+            <h1 className="text-lg sm:text-xl font-bold text-white">{t('helpCenter.articles.mobileApp.title')}</h1>
             <div className="w-20" />
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function MobileApp(props: any) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Article Header */}
         <div className="mb-8">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
             {t('helpCenter.articles.mobileApp.title')}
           </h1>
           <p className="text-xl text-white/80 mb-6">
@@ -62,7 +62,7 @@ export default function MobileApp(props: any) {
         {/* Introduction */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.mobileApp.introduction.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -74,7 +74,7 @@ export default function MobileApp(props: any) {
         {/* Download Options */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-2xl font-bold mb-6 text-white">
               {t('helpCenter.articles.mobileApp.download.title')}
             </h2>
             
@@ -93,7 +93,7 @@ export default function MobileApp(props: any) {
                   <li>• {t('helpCenter.articles.mobileApp.download.ios.requirement2')}</li>
                   <li>• {t('helpCenter.articles.mobileApp.download.ios.requirement3')}</li>
                 </ul>
-                <Button className="w-full bg-white text-black hover:bg-white/90">
+                <Button className="w-full bg-white text-white hover:bg-white/90">
                   <Download className="w-4 h-4 mr-2" />
                   {t('helpCenter.articles.mobileApp.download.ios.button')}
                 </Button>
@@ -113,7 +113,7 @@ export default function MobileApp(props: any) {
                   <li>• {t('helpCenter.articles.mobileApp.download.android.requirement2')}</li>
                   <li>• {t('helpCenter.articles.mobileApp.download.android.requirement3')}</li>
                 </ul>
-                <Button className="w-full bg-white text-black hover:bg-white/90">
+                <Button className="w-full bg-white text-white hover:bg-white/90">
                   <Download className="w-4 h-4 mr-2" />
                   {t('helpCenter.articles.mobileApp.download.android.button')}
                 </Button>
@@ -125,7 +125,7 @@ export default function MobileApp(props: any) {
         {/* App Features */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-6">
+            <h2 className="text-2xl font-bold mb-6 text-white">
               {t('helpCenter.articles.mobileApp.features.title')}
             </h2>
             
@@ -146,7 +146,7 @@ export default function MobileApp(props: any) {
         {/* Installation Steps */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.mobileApp.installation.title')}
             </h2>
             <p className="text-white/80 mb-4">
@@ -173,7 +173,7 @@ export default function MobileApp(props: any) {
         {/* Related Articles */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.mobileApp.related.title')}
             </h2>
             <div className="grid md:grid-cols-2 gap-4">

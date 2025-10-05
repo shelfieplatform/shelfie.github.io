@@ -100,7 +100,7 @@ export default function ContactSupport(props: any) {
                 </Button>
               </Link>
             )}
-            <h1 className="text-lg sm:text-xl font-bold">
+            <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.categories.contactSupport.title')}
             </h1>
             <div className="w-20" />
@@ -115,7 +115,7 @@ export default function ContactSupport(props: any) {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full mb-4">
             <MessageCircle className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
             {t('helpCenter.categories.contactSupport.title')}
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
@@ -125,7 +125,7 @@ export default function ContactSupport(props: any) {
 
         {/* Contact Options */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-8 text-center">
+          <h2 className="text-2xl font-bold mb-8 text-center text-white">
             {t('helpCenter.contact.contactOptions.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -158,7 +158,7 @@ export default function ContactSupport(props: any) {
         <div className="mb-12">
           <Card className="bg-white/10 border-white/20">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-6">
+              <h2 className="text-2xl font-bold mb-6 text-white">
                 {t('helpCenter.contact.contactForm.title')}
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -233,7 +233,7 @@ export default function ContactSupport(props: any) {
 
         {/* Feedback Options */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold mb-8 text-center">
+          <h2 className="text-2xl font-bold mb-8 text-center text-white">
             {t('helpCenter.contact.feedbackOptions.title')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

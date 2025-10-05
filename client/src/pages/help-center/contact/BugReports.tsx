@@ -64,7 +64,7 @@ export default function BugReports(props: any) {
                 </Button>
               </Link>
             )}
-            <h1 className="text-lg sm:text-xl font-bold">
+            <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.contact.bugReports.title')}
             </h1>
             <div className="w-20" />
@@ -79,7 +79,7 @@ export default function BugReports(props: any) {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full mb-4">
             <Bug className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
             {t('helpCenter.contact.bugReports.title')}
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
@@ -91,7 +91,7 @@ export default function BugReports(props: any) {
         <div className="mb-12">
           <Card className="bg-white/10 border-white/20">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-bold mb-6">
+              <h2 className="text-2xl font-bold mb-6 text-white">
                 {t('helpCenter.contact.bugReports.formTitle')}
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
