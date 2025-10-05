@@ -161,45 +161,6 @@ export default function PlatformTour(props: any) {
           ))}
         </div>
 
-        {/* Navigation Tips */}
-        <Card className="mb-8 bg-white/10 border-white/20">
-          <CardContent className="p-6">
-            <h2 className="text-2xl font-bold mb-4 text-white">
-              {t('helpCenter.articles.platformTour.navigation.title')}
-            </h2>
-            <p className="text-white/80 mb-4">
-              {t('helpCenter.articles.platformTour.navigation.description')}
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-green-500/20 border border-green-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-green-200 mb-2">
-                  {t('helpCenter.articles.platformTour.navigation.desktop.title')}
-                </h3>
-                <p className="text-green-100 mb-2">
-                  {t('helpCenter.articles.platformTour.navigation.desktop.description')}
-                </p>
-                <ul className="text-green-100 space-y-1 text-sm">
-                  <li>• {t('helpCenter.articles.platformTour.navigation.desktop.tip1')}</li>
-                  <li>• {t('helpCenter.articles.platformTour.navigation.desktop.tip2')}</li>
-                </ul>
-              </div>
-              
-              <div className="bg-purple-500/20 border border-purple-400/30 rounded-lg p-4">
-                <h3 className="font-semibold text-purple-200 mb-2">
-                  {t('helpCenter.articles.platformTour.navigation.mobile.title')}
-                </h3>
-                <p className="text-purple-100 mb-2">
-                  {t('helpCenter.articles.platformTour.navigation.mobile.description')}
-                </p>
-                <ul className="text-purple-100 space-y-1 text-sm">
-                  <li>• {t('helpCenter.articles.platformTour.navigation.mobile.tip1')}</li>
-                  <li>• {t('helpCenter.articles.platformTour.navigation.mobile.tip2')}</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
 
         {/* Key Features */}
         <Card className="mb-8 bg-white/10 border-white/20">
@@ -249,6 +210,20 @@ export default function PlatformTour(props: any) {
                     </h3>
                     <p className="text-purple-100">
                       {t('helpCenter.articles.platformTour.keyFeatures.discovery.content')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-blue-500/20 border border-blue-400/30 rounded-lg p-4">
+                <div className="flex items-start gap-3">
+                  <Heart className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-blue-200 mb-2">
+                      {t('helpCenter.articles.platformTour.keyFeatures.curate.title')}
+                    </h3>
+                    <p className="text-blue-100">
+                      {t('helpCenter.articles.platformTour.keyFeatures.curate.content')}
                     </p>
                   </div>
                 </div>
