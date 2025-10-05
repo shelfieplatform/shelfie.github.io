@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, BookOpen, Heart, Users, Star, CheckCircle, BookMarked, Home } from "lucide-react";
+import { ArrowLeft, BookOpen, Heart, Users, Star, CheckCircle, BookMarked } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
@@ -86,12 +86,6 @@ export default function WelcomeToShelfie(props: any) {
                   </Button>
                 </Link>
               )}
-              <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#A690F2] to-[#9C7FE8] rounded-lg flex items-center justify-center">
-                  <Home className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-lg sm:text-xl font-bold text-white">Shelfie</span>
-              </Link>
             </div>
             <h1 className="text-lg sm:text-xl font-bold text-white">
               {t('helpCenter.articles.welcome.title')}
@@ -228,7 +222,7 @@ export default function WelcomeToShelfie(props: any) {
               <Link key={index} href={article.href}>
                 <Card className="bg-white/10 border-white/20 hover:bg-white/20 transition-all duration-300 cursor-pointer">
                   <CardContent className="p-4">
-                    <h3 className="font-semibold text-sm group-hover:text-white transition-colors">
+                    <h3 className="font-semibold text-sm text-white group-hover:text-white transition-colors">
                       {article.title}
                     </h3>
                   </CardContent>
