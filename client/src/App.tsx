@@ -113,6 +113,7 @@ function Router() {
       <Route path="/help-center/getting-started/privacy-settings" component={PrivacySettings} />
       <Route path="/help-center/getting-started/mobile-app" component={MobileApp} />
       <Route path="/help-center/getting-started/desktop-mobile" component={DesktopMobile} />
+      <Route path="/help-center/getting-started/notifications" component={UnderstandingNotifications} />
       <Route path="/help-center/getting-started/understanding-notifications" component={UnderstandingNotifications} />
       <Route path="/help-center/getting-started/security-tips" component={BasicSecurityTips} />
       <Route path="/help-center/getting-started/basic-security-tips" component={BasicSecurityTips} />
@@ -144,17 +145,28 @@ function Router() {
       <Route path="/help-center/account-profile/profile-visibility" component={UpdateProfile} />
       
       {/* Individual Articles - Adding Favorites */}
+      <Route path="/help-center/adding-favorites/add-books" component={AddingBooks} />
       <Route path="/help-center/adding-favorites/adding-books" component={AddingBooks} />
+      <Route path="/help-center/adding-favorites/add-movies-tv" component={AddingMovies} />
       <Route path="/help-center/adding-favorites/adding-movies" component={AddingMovies} />
+      <Route path="/help-center/adding-favorites/add-music" component={AddingMusic} />
       <Route path="/help-center/adding-favorites/adding-music" component={AddingMusic} />
       <Route path="/help-center/adding-favorites/adding-series" component={AddingSeries} />
-      <Route path="/help-center/adding-favorites/creating-shelves" component={CreatingShelves} />
+      <Route path="/help-center/adding-favorites/import-lists" component={ImportingExporting} />
+      <Route path="/help-center/adding-favorites/importing-exporting" component={ImportingExporting} />
+      <Route path="/help-center/adding-favorites/organize-favorites" component={OrganizingFavorites} />
       <Route path="/help-center/adding-favorites/organizing-favorites" component={OrganizingFavorites} />
+      <Route path="/help-center/adding-favorites/custom-lists" component={CreatingShelves} />
+      <Route path="/help-center/adding-favorites/creating-shelves" component={CreatingShelves} />
+      <Route path="/help-center/adding-favorites/share-favorites" component={SharingFavorites} />
+      <Route path="/help-center/adding-favorites/sharing-favorites" component={SharingFavorites} />
+      <Route path="/help-center/adding-favorites/find-content" component={SearchingFavorites} />
       <Route path="/help-center/adding-favorites/searching-favorites" component={SearchingFavorites} />
       <Route path="/help-center/adding-favorites/rating-reviewing" component={RatingReviewing} />
-      <Route path="/help-center/adding-favorites/sharing-favorites" component={SharingFavorites} />
-      <Route path="/help-center/adding-favorites/importing-exporting" component={ImportingExporting} />
+      <Route path="/help-center/adding-favorites/manage-collections" component={OrganizingFavorites} />
+      <Route path="/help-center/adding-favorites/bulk-import" component={BulkActions} />
       <Route path="/help-center/adding-favorites/bulk-actions" component={BulkActions} />
+      <Route path="/help-center/adding-favorites/favorite-categories" component={AdvancedSearch} />
       <Route path="/help-center/adding-favorites/advanced-search" component={AdvancedSearch} />
       
       {/* Individual Articles - Privacy & Security */}
