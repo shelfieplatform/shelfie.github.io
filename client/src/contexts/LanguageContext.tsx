@@ -390,7 +390,7 @@ const translations = {
     // Terms of Service
     'terms.title': 'Kullanım Şartları',
     'terms.back': 'Geri',
-    'terms.welcome': 'Hoş Geldiniz',
+    'terms.welcome': 'Shelfie\'ye Hoş Geldiniz',
     'terms.intro': 'Bu Kullanım Şartları ("Şartlar"), Shelfie Inc. ("biz", "bize", "bizim") tarafından işletilen Shelfie mobil uygulaması ve ilgili hizmetlerin (topluca "Hizmet") kullanımını düzenler.',
     'terms.lastUpdated': 'Son Güncelleme: Aralık 2024',
     'terms.contact': 'İletişim Bilgileri',
