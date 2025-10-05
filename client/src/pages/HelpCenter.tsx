@@ -161,7 +161,7 @@ export default function HelpCenter(props: any) {
                         <category.icon className="w-6 h-6 text-white" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-semibold text-lg mb-2 group-hover:text-white transition-colors">
+                        <h3 className="font-semibold text-lg mb-2 text-white group-hover:text-white transition-colors">
                           {category.title}
                         </h3>
                         <p className="text-white/70 text-sm mb-3">
@@ -195,7 +195,7 @@ export default function HelpCenter(props: any) {
                         <HelpCircle className="w-5 h-5 text-white/80" />
                       </div>
                       <div className="flex-1">
-                        <h3 className="font-semibold text-lg mb-2 group-hover:text-white transition-colors">
+                        <h3 className="font-semibold text-lg mb-2 text-white group-hover:text-white transition-colors">
                           {article.title}
                         </h3>
                         <p className="text-white/70 text-sm">
