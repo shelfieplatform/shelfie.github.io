@@ -54,8 +54,6 @@ import SearchingFavorites from "@/pages/help-center/articles/SearchingFavorites"
 import RatingReviewing from "@/pages/help-center/articles/RatingReviewing";
 import SharingFavorites from "@/pages/help-center/articles/SharingFavorites";
 import ImportingExporting from "@/pages/help-center/articles/ImportingExporting";
-import BulkActions from "@/pages/help-center/articles/BulkActions";
-import AdvancedSearch from "@/pages/help-center/articles/AdvancedSearch";
 
 // Individual Articles - Privacy & Security
 import PrivacySettingsOverview from "@/pages/help-center/articles/PrivacySettingsOverview";
@@ -162,11 +160,9 @@ function Router() {
       <Route path="/help-center/adding-favorites/find-content" component={SearchingFavorites} />
       <Route path="/help-center/adding-favorites/searching-favorites" component={SearchingFavorites} />
       <Route path="/help-center/adding-favorites/rating-reviewing" component={RatingReviewing} />
-      <Route path="/help-center/adding-favorites/manage-collections" component={BulkActions} />
-      <Route path="/help-center/adding-favorites/bulk-import" component={BulkActions} />
-      <Route path="/help-center/adding-favorites/bulk-actions" component={BulkActions} />
-      <Route path="/help-center/adding-favorites/favorite-categories" component={AdvancedSearch} />
-      <Route path="/help-center/adding-favorites/advanced-search" component={AdvancedSearch} />
+      <Route path="/help-center/adding-favorites/manage-collections" component={SearchingFavorites} />
+      <Route path="/help-center/adding-favorites/bulk-import" component={SearchingFavorites} />
+      <Route path="/help-center/adding-favorites/favorite-categories" component={SearchingFavorites} />
       
       {/* Individual Articles - Privacy & Security */}
       <Route path="/help-center/privacy-security/privacy-settings" component={PrivacySettingsOverview} />
