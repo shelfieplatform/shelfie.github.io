@@ -1,2 +1,7 @@
-# CloudFlare Pages redirects for SPA
+# Cloudflare Pages redirects for SPA
+# Serve static files directly
+/sitemap.xml    /sitemap.xml    200
+/robots.txt     /robots.txt     200
+
+# Fallback to SPA for all other routes
 /*    /index.html   200
