@@ -274,6 +274,62 @@ export default function GettingFirstFollowers(props: any) {
           </CardContent>
         </Card>
 
+        {/* How to Follow Someone */}
+        <Card className="mb-8 bg-white/10 border-white/20">
+          <CardContent className="p-6">
+            <h2 className="text-2xl font-bold mb-4 text-white">
+              {t('helpCenter.articles.gettingFirstFollowers.howToFollow.title')}
+            </h2>
+            <p className="text-white/80 mb-4">
+              {t('helpCenter.articles.gettingFirstFollowers.howToFollow.description')}
+            </p>
+            
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  1
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1 text-white">
+                    {t('helpCenter.articles.gettingFirstFollowers.howToFollow.step1.title')}
+                  </h3>
+                  <p className="text-white/80">
+                    {t('helpCenter.articles.gettingFirstFollowers.howToFollow.step1.description')}
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  2
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1 text-white">
+                    {t('helpCenter.articles.gettingFirstFollowers.howToFollow.step2.title')}
+                  </h3>
+                  <p className="text-white/80">
+                    {t('helpCenter.articles.gettingFirstFollowers.howToFollow.step2.description')}
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                  3
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-1 text-white">
+                    {t('helpCenter.articles.gettingFirstFollowers.howToFollow.step3.title')}
+                  </h3>
+                  <p className="text-white/80">
+                    {t('helpCenter.articles.gettingFirstFollowers.howToFollow.step3.description')}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Related Articles */}
         <Card className="mb-8 bg-white/10 border-white/20">
           <CardContent className="p-6">
