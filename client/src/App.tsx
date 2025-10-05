@@ -170,14 +170,25 @@ function Router() {
       <Route path="/help-center/adding-favorites/advanced-search" component={AdvancedSearch} />
       
       {/* Individual Articles - Privacy & Security */}
+      <Route path="/help-center/privacy-security/privacy-settings" component={PrivacySettingsOverview} />
       <Route path="/help-center/privacy-security/privacy-settings-overview" component={PrivacySettingsOverview} />
       <Route path="/help-center/privacy-security/profile-visibility" component={ProfileVisibility} />
+      <Route path="/help-center/privacy-security/blocking-reporting" component={BlockingReportingUsers} />
       <Route path="/help-center/privacy-security/blocking-reporting-users" component={BlockingReportingUsers} />
+      <Route path="/help-center/privacy-security/data-protection" component={DataProtectionGDPR} />
       <Route path="/help-center/privacy-security/data-protection-gdpr" component={DataProtectionGDPR} />
+      <Route path="/help-center/privacy-security/security-best-practices" component={AccountSecurityBestPractices} />
       <Route path="/help-center/privacy-security/account-security-best-practices" component={AccountSecurityBestPractices} />
+      <Route path="/help-center/privacy-security/two-factor-auth" component={TwoFactorAuthentication} />
       <Route path="/help-center/privacy-security/two-factor-authentication" component={TwoFactorAuthentication} />
+      <Route path="/help-center/privacy-security/privacy-policy" component={PrivacyPolicyOverview} />
       <Route path="/help-center/privacy-security/privacy-policy-overview" component={PrivacyPolicyOverview} />
+      <Route path="/help-center/privacy-security/data-sharing" component={DataSharingSettings} />
       <Route path="/help-center/privacy-security/data-sharing-settings" component={DataSharingSettings} />
+      <Route path="/help-center/privacy-security/third-party-integrations" component={DataSharingSettings} />
+      <Route path="/help-center/privacy-security/security-notifications" component={SecurityTips} />
+      <Route path="/help-center/privacy-security/account-recovery" component={AccountRecovery} />
+      <Route path="/help-center/privacy-security/data-deletion" component={AccountRecovery} />
       <Route path="/help-center/privacy-security/security-audit" component={SecurityAudit} />
       <Route path="/help-center/privacy-security/security-threats" component={SecurityThreats} />
       <Route path="/help-center/privacy-security/security-tips" component={SecurityTips} />
