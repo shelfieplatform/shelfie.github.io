@@ -17,6 +17,7 @@ import Troubleshooting from "@/pages/help-center/Troubleshooting";
 import ContactSupport from "@/pages/help-center/ContactSupport";
 import Feedback from "@/pages/help-center/contact/Feedback";
 import BugReports from "@/pages/help-center/contact/BugReports";
+import FeatureRequests from "@/pages/help-center/contact/FeatureRequests";
 
 // Individual Articles - Getting Started
 import WelcomeToShelfie from "@/pages/help-center/articles/WelcomeToShelfie";
@@ -105,6 +106,7 @@ function Router() {
       <Route path="/help-center/contact" component={ContactSupport} />
       <Route path="/help-center/contact/feedback" component={Feedback} />
       <Route path="/help-center/contact/bug-reports" component={BugReports} />
+      <Route path="/help-center/contact/feature-requests" component={FeatureRequests} />
       
       {/* Individual Articles - Getting Started */}
       <Route path="/help-center/getting-started/welcome" component={WelcomeToShelfie} />
