@@ -2029,6 +2029,8 @@ const translations = {
     'helpCenter.articles.privacySettingsOverview.related.profileVisibilityDesc': 'Learn about profile visibility options',
     'helpCenter.articles.privacySettingsOverview.related.dataSharing': 'Data Sharing Settings',
     'helpCenter.articles.privacySettingsOverview.related.dataSharingDesc': 'Control how your data is shared',
+    'helpCenter.articles.privacySettingsOverview.related.desktopMobile': 'Desktop vs Mobile Privacy',
+    'helpCenter.articles.privacySettingsOverview.related.desktopMobileDesc': 'Privacy differences between desktop and mobile',
     'helpCenter.articles.privacySettingsOverview.previousArticle': 'Previous: Privacy & Security',
     'helpCenter.articles.privacySettingsOverview.nextArticle': 'Next: Who Can See Your Profile',
     

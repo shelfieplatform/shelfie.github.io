@@ -176,17 +176,7 @@ export default function MobileApp(props: any) {
             <h2 className="text-2xl font-bold mb-4 text-white">
               {t('helpCenter.articles.mobileApp.related.title')}
             </h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <Link href="/help-center/getting-started/desktop-mobile">
-                <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
-                  <h3 className="font-semibold mb-2 text-white">
-                    {t('helpCenter.articles.mobileApp.related.desktopMobile')}
-                  </h3>
-                  <p className="text-white/60 text-sm">
-                    {t('helpCenter.articles.mobileApp.related.desktopMobileDesc')}
-                  </p>
-                </div>
-              </Link>
+            <div className="grid md:grid-cols-1 gap-4">
               <Link href="/help-center/getting-started/first-followers">
                 <div className="p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
                   <h3 className="font-semibold mb-2 text-white">
