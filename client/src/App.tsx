@@ -50,7 +50,6 @@ import AddingBooks from "@/pages/help-center/articles/AddingBooks";
 import AddingMovies from "@/pages/help-center/articles/AddingMovies";
 import AddingMusic from "@/pages/help-center/articles/AddingMusic";
 import AddingSeries from "@/pages/help-center/articles/AddingSeries";
-import CreatingShelves from "@/pages/help-center/articles/CreatingShelves";
 import OrganizingFavorites from "@/pages/help-center/articles/OrganizingFavorites";
 import SearchingFavorites from "@/pages/help-center/articles/SearchingFavorites";
 import RatingReviewing from "@/pages/help-center/articles/RatingReviewing";
@@ -161,8 +160,6 @@ function Router() {
       <Route path="/help-center/adding-favorites/importing-exporting" component={ImportingExporting} />
       <Route path="/help-center/adding-favorites/organize-favorites" component={OrganizingFavorites} />
       <Route path="/help-center/adding-favorites/organizing-favorites" component={OrganizingFavorites} />
-      <Route path="/help-center/adding-favorites/custom-lists" component={CreatingShelves} />
-      <Route path="/help-center/adding-favorites/creating-shelves" component={CreatingShelves} />
       <Route path="/help-center/adding-favorites/share-favorites" component={SharingFavorites} />
       <Route path="/help-center/adding-favorites/sharing-favorites" component={SharingFavorites} />
       <Route path="/help-center/adding-favorites/find-content" component={SearchingFavorites} />

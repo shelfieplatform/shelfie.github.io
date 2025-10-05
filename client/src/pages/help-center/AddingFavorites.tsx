@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Heart, BookOpen, Film, Music, Upload, FolderOpen, Share, Search, Star, Layers, Download, Tag } from "lucide-react";
+import { ArrowLeft, Heart, BookOpen, Film, Music, Upload, FolderOpen, Share, Search, Star, Download, Tag } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
@@ -47,13 +47,6 @@ export default function AddingFavorites(props: any) {
       icon: FolderOpen,
       href: "/help-center/adding-favorites/organize-favorites",
       estimatedTime: "4 min read"
-    },
-    {
-      title: t('helpCenter.addingFavorites.customLists.title'),
-      description: t('helpCenter.addingFavorites.customLists.description'),
-      icon: Layers,
-      href: "/help-center/adding-favorites/custom-lists",
-      estimatedTime: "5 min read"
     },
     {
       title: t('helpCenter.addingFavorites.shareFavorites.title'),
