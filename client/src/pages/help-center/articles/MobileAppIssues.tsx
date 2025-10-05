@@ -310,7 +310,7 @@ export default function MobileAppIssues(props: any) {
                 </p>
                 <ul className="text-amber-100 space-y-1 text-sm">
                   <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.updateFailed.solution1')}</li>
-                  <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.updateIssues.updateFailed.solution2')}</li>
+                  <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.updateFailed.solution2')}</li>
                   <li>• {t('helpCenter.articles.mobileAppIssues.updateIssues.updateFailed.solution3')}</li>
                 </ul>
               </div>
