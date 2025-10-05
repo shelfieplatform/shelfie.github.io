@@ -14,6 +14,8 @@ import AddingFavorites from "@/pages/help-center/AddingFavorites";
 import PrivacySecurity from "@/pages/help-center/PrivacySecurity";
 import Troubleshooting from "@/pages/help-center/Troubleshooting";
 import ContactSupport from "@/pages/help-center/ContactSupport";
+import Feedback from "@/pages/help-center/contact/Feedback";
+import BugReports from "@/pages/help-center/contact/BugReports";
 
 // Individual Articles - Getting Started
 import WelcomeToShelfie from "@/pages/help-center/articles/WelcomeToShelfie";
@@ -103,6 +105,8 @@ function Router() {
       <Route path="/help-center/privacy-security" component={PrivacySecurity} />
       <Route path="/help-center/troubleshooting" component={Troubleshooting} />
       <Route path="/help-center/contact" component={ContactSupport} />
+      <Route path="/help-center/contact/feedback" component={Feedback} />
+      <Route path="/help-center/contact/bug-reports" component={BugReports} />
       
       {/* Individual Articles - Getting Started */}
       <Route path="/help-center/getting-started/welcome" component={WelcomeToShelfie} />

@@ -2939,6 +2939,34 @@ const translations = {
     'helpCenter.contact.communityForums.title': 'Community Forums',
     'helpCenter.contact.communityForums.description': 'Connect with other Shelfie users',
     
+    // Feedback Form
+    'helpCenter.contact.feedback.formTitle': 'Share Your Feedback',
+    'helpCenter.contact.feedback.subjectPlaceholder': 'What would you like to tell us?',
+    'helpCenter.contact.feedback.rating': 'Overall Rating',
+    'helpCenter.contact.feedback.selectRating': 'Select a rating',
+    'helpCenter.contact.feedback.excellent': 'Excellent',
+    'helpCenter.contact.feedback.good': 'Good',
+    'helpCenter.contact.feedback.average': 'Average',
+    'helpCenter.contact.feedback.poor': 'Poor',
+    'helpCenter.contact.feedback.terrible': 'Terrible',
+    'helpCenter.contact.feedback.messagePlaceholder': 'Tell us about your experience with Shelfie...',
+    'helpCenter.contact.feedback.submit': 'Submit Feedback',
+    'helpCenter.backToContact': 'Back to Contact Support',
+    
+    // Bug Reports Form
+    'helpCenter.contact.bugReports.formTitle': 'Report a Bug',
+    'helpCenter.contact.bugReports.subjectPlaceholder': 'Brief description of the bug',
+    'helpCenter.contact.bugReports.device': 'Device Type',
+    'helpCenter.contact.bugReports.selectDevice': 'Select your device',
+    'helpCenter.contact.bugReports.desktop': 'Desktop/Computer',
+    'helpCenter.contact.bugReports.mobile': 'Mobile/Phone',
+    'helpCenter.contact.bugReports.browser': 'Browser/App Version',
+    'helpCenter.contact.bugReports.browserPlaceholder': 'e.g., Chrome 120, Safari 17, etc.',
+    'helpCenter.contact.bugReports.steps': 'Steps to Reproduce',
+    'helpCenter.contact.bugReports.stepsPlaceholder': '1. Go to...\n2. Click on...\n3. See error...',
+    'helpCenter.contact.bugReports.messagePlaceholder': 'Describe the bug in detail...',
+    'helpCenter.contact.bugReports.submit': 'Submit Bug Report',
+    
     // Terms of Service
     'terms.title': 'Terms of Service',
     'terms.back': 'Back',
@@ -4368,6 +4396,34 @@ const translations = {
     'helpCenter.contact.featureRequests.description': 'Yeni özellikler ve iyileştirmeler önerin',
     'helpCenter.contact.communityForums.title': 'Topluluk Forumları',
     'helpCenter.contact.communityForums.description': 'Diğer Shelfie kullanıcılarıyla bağlantı kurun',
+    
+    // Feedback Form
+    'helpCenter.contact.feedback.formTitle': 'Geri Bildiriminizi Paylaşın',
+    'helpCenter.contact.feedback.subjectPlaceholder': 'Bize ne söylemek istiyorsunuz?',
+    'helpCenter.contact.feedback.rating': 'Genel Değerlendirme',
+    'helpCenter.contact.feedback.selectRating': 'Bir değerlendirme seçin',
+    'helpCenter.contact.feedback.excellent': 'Mükemmel',
+    'helpCenter.contact.feedback.good': 'İyi',
+    'helpCenter.contact.feedback.average': 'Orta',
+    'helpCenter.contact.feedback.poor': 'Kötü',
+    'helpCenter.contact.feedback.terrible': 'Berbat',
+    'helpCenter.contact.feedback.messagePlaceholder': 'Shelfie deneyiminiz hakkında bize bilgi verin...',
+    'helpCenter.contact.feedback.submit': 'Geri Bildirim Gönder',
+    'helpCenter.backToContact': 'İletişim Desteğine Dön',
+    
+    // Bug Reports Form
+    'helpCenter.contact.bugReports.formTitle': 'Hata Bildir',
+    'helpCenter.contact.bugReports.subjectPlaceholder': 'Hatanın kısa açıklaması',
+    'helpCenter.contact.bugReports.device': 'Cihaz Türü',
+    'helpCenter.contact.bugReports.selectDevice': 'Cihazınızı seçin',
+    'helpCenter.contact.bugReports.desktop': 'Masaüstü/Bilgisayar',
+    'helpCenter.contact.bugReports.mobile': 'Mobil/Telefon',
+    'helpCenter.contact.bugReports.browser': 'Tarayıcı/Uygulama Sürümü',
+    'helpCenter.contact.bugReports.browserPlaceholder': 'örn. Chrome 120, Safari 17, vb.',
+    'helpCenter.contact.bugReports.steps': 'Yeniden Üretme Adımları',
+    'helpCenter.contact.bugReports.stepsPlaceholder': '1. Git...\n2. Tıkla...\n3. Hatayı gör...',
+    'helpCenter.contact.bugReports.messagePlaceholder': 'Hatayı detaylı olarak açıklayın...',
+    'helpCenter.contact.bugReports.submit': 'Hata Raporu Gönder',
     
     // Terms of Service
     'terms.title': 'Kullanım Şartları',
