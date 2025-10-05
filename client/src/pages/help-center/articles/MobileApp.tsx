@@ -198,7 +198,7 @@ export default function MobileApp(props: any) {
               ← {t('helpCenter.articles.mobileApp.previousArticle')}
             </Button>
           </Link>
-          <Link href="/help-center/getting-started/desktop-mobile">
+          <Link href="/help-center/getting-started/first-followers">
             <Button className="bg-white text-purple-600 hover:bg-white/90">
               {t('helpCenter.articles.mobileApp.nextArticle')} →
             </Button>
