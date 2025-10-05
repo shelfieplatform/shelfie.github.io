@@ -2798,8 +2798,6 @@ const translations = {
     'helpCenter.contact.bugReports.description': 'Report bugs and technical issues',
     'helpCenter.contact.featureRequests.title': 'Feature Requests',
     'helpCenter.contact.featureRequests.description': 'Suggest new features and improvements',
-    'helpCenter.contact.communityForums.title': 'Community Forums',
-    'helpCenter.contact.communityForums.description': 'Connect with other Shelfie users',
     
     // Feedback Form
     'helpCenter.contact.feedback.formTitle': 'Share Your Feedback',
@@ -4260,8 +4258,6 @@ const translations = {
     'helpCenter.contact.bugReports.description': 'Hataları ve teknik sorunları bildirin',
     'helpCenter.contact.featureRequests.title': 'Özellik Talepleri',
     'helpCenter.contact.featureRequests.description': 'Yeni özellikler ve iyileştirmeler önerin',
-    'helpCenter.contact.communityForums.title': 'Topluluk Forumları',
-    'helpCenter.contact.communityForums.description': 'Diğer Shelfie kullanıcılarıyla bağlantı kurun',
     
     // Feedback Form
     'helpCenter.contact.feedback.formTitle': 'Geri Bildiriminizi Paylaşın',

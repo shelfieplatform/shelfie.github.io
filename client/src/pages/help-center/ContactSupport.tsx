@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowLeft, MessageCircle, Mail, Send, Bug, Lightbulb, Users } from "lucide-react";
+import { ArrowLeft, MessageCircle, Mail, Send, Bug, Lightbulb } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
@@ -65,12 +65,6 @@ export default function ContactSupport(props: any) {
       description: t('helpCenter.contact.featureRequests.description'),
       icon: Lightbulb,
       href: "/help-center/contact/feature-requests"
-    },
-    {
-      title: t('helpCenter.contact.communityForums.title'),
-      description: t('helpCenter.contact.communityForums.description'),
-      icon: Users,
-      href: "/help-center/contact/community-forums"
     }
   ];
 
