@@ -1,101 +1,101 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen, User, Settings, Smartphone, Users, Bell, Shield, Eye } from "lucide-react";
+import { ArrowLeft, User, Settings, Camera, FileText, Shield, Key, UserX, Download, RotateCcw, Eye } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
-interface GettingStartedProps {
+interface AccountProfileProps {
   onBack?: () => void;
 }
 
-export default function GettingStarted(props: any) {
+export default function AccountProfile(props: any) {
   const { onBack } = props;
   const { t } = useLanguage();
 
   const articles = [
     {
-      title: t('helpCenter.gettingStarted.welcome.title'),
-      description: t('helpCenter.gettingStarted.welcome.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/welcome",
-      estimatedTime: "5 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.creatingAccount.title'),
-      description: t('helpCenter.gettingStarted.creatingAccount.description'),
+      title: t('helpCenter.accountProfile.changeUsername.title'),
+      description: t('helpCenter.accountProfile.changeUsername.description'),
       icon: User,
-      href: "/help-center/getting-started/creating-account",
+      href: "/help-center/account-profile/change-username",
       estimatedTime: "3 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.settingUpProfile.title'),
-      description: t('helpCenter.gettingStarted.settingUpProfile.description'),
+      title: t('helpCenter.accountProfile.updateProfile.title'),
+      description: t('helpCenter.accountProfile.updateProfile.description'),
       icon: Settings,
-      href: "/help-center/getting-started/setting-up-profile",
+      href: "/help-center/account-profile/update-profile",
       estimatedTime: "4 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.dashboard.title'),
-      description: t('helpCenter.gettingStarted.dashboard.description'),
-      icon: Eye,
-      href: "/help-center/getting-started/dashboard",
+      title: t('helpCenter.accountProfile.profilePictures.title'),
+      description: t('helpCenter.accountProfile.profilePictures.description'),
+      icon: Camera,
+      href: "/help-center/account-profile/profile-pictures",
       estimatedTime: "3 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.privacySettings.title'),
-      description: t('helpCenter.gettingStarted.privacySettings.description'),
-      icon: Shield,
-      href: "/help-center/getting-started/privacy-settings",
-      estimatedTime: "4 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.mobileApp.title'),
-      description: t('helpCenter.gettingStarted.mobileApp.description'),
-      icon: Smartphone,
-      href: "/help-center/getting-started/mobile-app",
+      title: t('helpCenter.accountProfile.settingBio.title'),
+      description: t('helpCenter.accountProfile.settingBio.description'),
+      icon: FileText,
+      href: "/help-center/account-profile/setting-bio",
       estimatedTime: "2 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.desktopMobile.title'),
-      description: t('helpCenter.gettingStarted.desktopMobile.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/desktop-mobile",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.firstFollowers.title'),
-      description: t('helpCenter.gettingStarted.firstFollowers.description'),
-      icon: Users,
-      href: "/help-center/getting-started/first-followers",
+      title: t('helpCenter.accountProfile.connectedAccounts.title'),
+      description: t('helpCenter.accountProfile.connectedAccounts.description'),
+      icon: Settings,
+      href: "/help-center/account-profile/connected-accounts",
       estimatedTime: "4 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.followingUsers.title'),
-      description: t('helpCenter.gettingStarted.followingUsers.description'),
-      icon: Users,
-      href: "/help-center/getting-started/following-users",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.notifications.title'),
-      description: t('helpCenter.gettingStarted.notifications.description'),
-      icon: Bell,
-      href: "/help-center/getting-started/notifications",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.securityTips.title'),
-      description: t('helpCenter.gettingStarted.securityTips.description'),
+      title: t('helpCenter.accountProfile.securitySettings.title'),
+      description: t('helpCenter.accountProfile.securitySettings.description'),
       icon: Shield,
-      href: "/help-center/getting-started/security-tips",
+      href: "/help-center/account-profile/security-settings",
       estimatedTime: "5 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.platformTour.title'),
-      description: t('helpCenter.gettingStarted.platformTour.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/platform-tour",
+      title: t('helpCenter.accountProfile.twoFactorAuth.title'),
+      description: t('helpCenter.accountProfile.twoFactorAuth.description'),
+      icon: Key,
+      href: "/help-center/account-profile/two-factor-auth",
       estimatedTime: "6 min read"
+    },
+    {
+      title: t('helpCenter.accountProfile.passwordManagement.title'),
+      description: t('helpCenter.accountProfile.passwordManagement.description'),
+      icon: Key,
+      href: "/help-center/account-profile/password-management",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.accountProfile.accountDeactivation.title'),
+      description: t('helpCenter.accountProfile.accountDeactivation.description'),
+      icon: UserX,
+      href: "/help-center/account-profile/account-deactivation",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.accountProfile.dataExport.title'),
+      description: t('helpCenter.accountProfile.dataExport.description'),
+      icon: Download,
+      href: "/help-center/account-profile/data-export",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.accountProfile.accountRecovery.title'),
+      description: t('helpCenter.accountProfile.accountRecovery.description'),
+      icon: RotateCcw,
+      href: "/help-center/account-profile/account-recovery",
+      estimatedTime: "5 min read"
+    },
+    {
+      title: t('helpCenter.accountProfile.profileVisibility.title'),
+      description: t('helpCenter.accountProfile.profileVisibility.description'),
+      icon: Eye,
+      href: "/help-center/account-profile/profile-visibility",
+      estimatedTime: "4 min read"
     }
   ];
 
@@ -126,7 +126,7 @@ export default function GettingStarted(props: any) {
               </Link>
             )}
             <h1 className="text-lg sm:text-xl font-bold">
-              {t('helpCenter.categories.gettingStarted.title')}
+              {t('helpCenter.categories.accountProfile.title')}
             </h1>
             <div className="w-20" />
           </div>
@@ -137,14 +137,14 @@ export default function GettingStarted(props: any) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         {/* Category Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4">
-            <BookOpen className="w-8 h-8 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full mb-4">
+            <User className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">
-            {t('helpCenter.categories.gettingStarted.title')}
+            {t('helpCenter.categories.accountProfile.title')}
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            {t('helpCenter.categories.gettingStarted.description')}
+            {t('helpCenter.categories.accountProfile.description')}
           </p>
         </div>
 

@@ -10,7 +10,8 @@ interface HelpCenterProps {
   onBack?: () => void;
 }
 
-export default function HelpCenter({ onBack }: HelpCenterProps) {
+export default function HelpCenter(props: any) {
+  const { onBack } = props;
   const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState("");
 

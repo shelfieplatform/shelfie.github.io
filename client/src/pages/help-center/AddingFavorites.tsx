@@ -1,101 +1,101 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen, User, Settings, Smartphone, Users, Bell, Shield, Eye } from "lucide-react";
+import { ArrowLeft, Heart, BookOpen, Film, Music, Upload, FolderOpen, Share, Search, Star, Layers, Download, Tag } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
-interface GettingStartedProps {
+interface AddingFavoritesProps {
   onBack?: () => void;
 }
 
-export default function GettingStarted(props: any) {
+export default function AddingFavorites(props: any) {
   const { onBack } = props;
   const { t } = useLanguage();
 
   const articles = [
     {
-      title: t('helpCenter.gettingStarted.welcome.title'),
-      description: t('helpCenter.gettingStarted.welcome.description'),
+      title: t('helpCenter.addingFavorites.addBooks.title'),
+      description: t('helpCenter.addingFavorites.addBooks.description'),
       icon: BookOpen,
-      href: "/help-center/getting-started/welcome",
+      href: "/help-center/adding-favorites/add-books",
       estimatedTime: "5 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.creatingAccount.title'),
-      description: t('helpCenter.gettingStarted.creatingAccount.description'),
-      icon: User,
-      href: "/help-center/getting-started/creating-account",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.settingUpProfile.title'),
-      description: t('helpCenter.gettingStarted.settingUpProfile.description'),
-      icon: Settings,
-      href: "/help-center/getting-started/setting-up-profile",
-      estimatedTime: "4 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.dashboard.title'),
-      description: t('helpCenter.gettingStarted.dashboard.description'),
-      icon: Eye,
-      href: "/help-center/getting-started/dashboard",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.privacySettings.title'),
-      description: t('helpCenter.gettingStarted.privacySettings.description'),
-      icon: Shield,
-      href: "/help-center/getting-started/privacy-settings",
-      estimatedTime: "4 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.mobileApp.title'),
-      description: t('helpCenter.gettingStarted.mobileApp.description'),
-      icon: Smartphone,
-      href: "/help-center/getting-started/mobile-app",
-      estimatedTime: "2 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.desktopMobile.title'),
-      description: t('helpCenter.gettingStarted.desktopMobile.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/desktop-mobile",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.firstFollowers.title'),
-      description: t('helpCenter.gettingStarted.firstFollowers.description'),
-      icon: Users,
-      href: "/help-center/getting-started/first-followers",
-      estimatedTime: "4 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.followingUsers.title'),
-      description: t('helpCenter.gettingStarted.followingUsers.description'),
-      icon: Users,
-      href: "/help-center/getting-started/following-users",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.notifications.title'),
-      description: t('helpCenter.gettingStarted.notifications.description'),
-      icon: Bell,
-      href: "/help-center/getting-started/notifications",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.securityTips.title'),
-      description: t('helpCenter.gettingStarted.securityTips.description'),
-      icon: Shield,
-      href: "/help-center/getting-started/security-tips",
+      title: t('helpCenter.addingFavorites.addMoviesTv.title'),
+      description: t('helpCenter.addingFavorites.addMoviesTv.description'),
+      icon: Film,
+      href: "/help-center/adding-favorites/add-movies-tv",
       estimatedTime: "5 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.platformTour.title'),
-      description: t('helpCenter.gettingStarted.platformTour.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/platform-tour",
+      title: t('helpCenter.addingFavorites.addMusic.title'),
+      description: t('helpCenter.addingFavorites.addMusic.description'),
+      icon: Music,
+      href: "/help-center/adding-favorites/add-music",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.importLists.title'),
+      description: t('helpCenter.addingFavorites.importLists.description'),
+      icon: Upload,
+      href: "/help-center/adding-favorites/import-lists",
       estimatedTime: "6 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.organizeFavorites.title'),
+      description: t('helpCenter.addingFavorites.organizeFavorites.description'),
+      icon: FolderOpen,
+      href: "/help-center/adding-favorites/organize-favorites",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.customLists.title'),
+      description: t('helpCenter.addingFavorites.customLists.description'),
+      icon: Layers,
+      href: "/help-center/adding-favorites/custom-lists",
+      estimatedTime: "5 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.shareFavorites.title'),
+      description: t('helpCenter.addingFavorites.shareFavorites.description'),
+      icon: Share,
+      href: "/help-center/adding-favorites/share-favorites",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.findContent.title'),
+      description: t('helpCenter.addingFavorites.findContent.description'),
+      icon: Search,
+      href: "/help-center/adding-favorites/find-content",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.ratingReviewing.title'),
+      description: t('helpCenter.addingFavorites.ratingReviewing.description'),
+      icon: Star,
+      href: "/help-center/adding-favorites/rating-reviewing",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.manageCollections.title'),
+      description: t('helpCenter.addingFavorites.manageCollections.description'),
+      icon: FolderOpen,
+      href: "/help-center/adding-favorites/manage-collections",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.bulkImport.title'),
+      description: t('helpCenter.addingFavorites.bulkImport.description'),
+      icon: Download,
+      href: "/help-center/adding-favorites/bulk-import",
+      estimatedTime: "5 min read"
+    },
+    {
+      title: t('helpCenter.addingFavorites.favoriteCategories.title'),
+      description: t('helpCenter.addingFavorites.favoriteCategories.description'),
+      icon: Tag,
+      href: "/help-center/adding-favorites/favorite-categories",
+      estimatedTime: "3 min read"
     }
   ];
 
@@ -126,7 +126,7 @@ export default function GettingStarted(props: any) {
               </Link>
             )}
             <h1 className="text-lg sm:text-xl font-bold">
-              {t('helpCenter.categories.gettingStarted.title')}
+              {t('helpCenter.categories.addingFavorites.title')}
             </h1>
             <div className="w-20" />
           </div>
@@ -137,14 +137,14 @@ export default function GettingStarted(props: any) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         {/* Category Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4">
-            <BookOpen className="w-8 h-8 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mb-4">
+            <Heart className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">
-            {t('helpCenter.categories.gettingStarted.title')}
+            {t('helpCenter.categories.addingFavorites.title')}
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            {t('helpCenter.categories.gettingStarted.description')}
+            {t('helpCenter.categories.addingFavorites.description')}
           </p>
         </div>
 

@@ -1,101 +1,101 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen, User, Settings, Smartphone, Users, Bell, Shield, Eye } from "lucide-react";
+import { ArrowLeft, Wrench, LogIn, Smartphone, Upload, Search, Bell, Zap, Globe, AlertTriangle, RotateCcw, MessageSquare } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
-interface GettingStartedProps {
+interface TroubleshootingProps {
   onBack?: () => void;
 }
 
-export default function GettingStarted(props: any) {
+export default function Troubleshooting(props: any) {
   const { onBack } = props;
   const { t } = useLanguage();
 
   const articles = [
     {
-      title: t('helpCenter.gettingStarted.welcome.title'),
-      description: t('helpCenter.gettingStarted.welcome.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/welcome",
-      estimatedTime: "5 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.creatingAccount.title'),
-      description: t('helpCenter.gettingStarted.creatingAccount.description'),
-      icon: User,
-      href: "/help-center/getting-started/creating-account",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.settingUpProfile.title'),
-      description: t('helpCenter.gettingStarted.settingUpProfile.description'),
-      icon: Settings,
-      href: "/help-center/getting-started/setting-up-profile",
+      title: t('helpCenter.troubleshooting.loginIssues.title'),
+      description: t('helpCenter.troubleshooting.loginIssues.description'),
+      icon: LogIn,
+      href: "/help-center/troubleshooting/login-issues",
       estimatedTime: "4 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.dashboard.title'),
-      description: t('helpCenter.gettingStarted.dashboard.description'),
-      icon: Eye,
-      href: "/help-center/getting-started/dashboard",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.privacySettings.title'),
-      description: t('helpCenter.gettingStarted.privacySettings.description'),
-      icon: Shield,
-      href: "/help-center/getting-started/privacy-settings",
-      estimatedTime: "4 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.mobileApp.title'),
-      description: t('helpCenter.gettingStarted.mobileApp.description'),
+      title: t('helpCenter.troubleshooting.appNotLoading.title'),
+      description: t('helpCenter.troubleshooting.appNotLoading.description'),
       icon: Smartphone,
-      href: "/help-center/getting-started/mobile-app",
-      estimatedTime: "2 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.desktopMobile.title'),
-      description: t('helpCenter.gettingStarted.desktopMobile.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/desktop-mobile",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.firstFollowers.title'),
-      description: t('helpCenter.gettingStarted.firstFollowers.description'),
-      icon: Users,
-      href: "/help-center/getting-started/first-followers",
-      estimatedTime: "4 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.followingUsers.title'),
-      description: t('helpCenter.gettingStarted.followingUsers.description'),
-      icon: Users,
-      href: "/help-center/getting-started/following-users",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.notifications.title'),
-      description: t('helpCenter.gettingStarted.notifications.description'),
-      icon: Bell,
-      href: "/help-center/getting-started/notifications",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.securityTips.title'),
-      description: t('helpCenter.gettingStarted.securityTips.description'),
-      icon: Shield,
-      href: "/help-center/getting-started/security-tips",
+      href: "/help-center/troubleshooting/app-not-loading",
       estimatedTime: "5 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.platformTour.title'),
-      description: t('helpCenter.gettingStarted.platformTour.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/platform-tour",
-      estimatedTime: "6 min read"
+      title: t('helpCenter.troubleshooting.uploadProblems.title'),
+      description: t('helpCenter.troubleshooting.uploadProblems.description'),
+      icon: Upload,
+      href: "/help-center/troubleshooting/upload-problems",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.searchNotWorking.title'),
+      description: t('helpCenter.troubleshooting.searchNotWorking.description'),
+      icon: Search,
+      href: "/help-center/troubleshooting/search-not-working",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.notificationIssues.title'),
+      description: t('helpCenter.troubleshooting.notificationIssues.description'),
+      icon: Bell,
+      href: "/help-center/troubleshooting/notification-issues",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.performanceProblems.title'),
+      description: t('helpCenter.troubleshooting.performanceProblems.description'),
+      icon: Zap,
+      href: "/help-center/troubleshooting/performance-problems",
+      estimatedTime: "5 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.browserCompatibility.title'),
+      description: t('helpCenter.troubleshooting.browserCompatibility.description'),
+      icon: Globe,
+      href: "/help-center/troubleshooting/browser-compatibility",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.mobileAppIssues.title'),
+      description: t('helpCenter.troubleshooting.mobileAppIssues.description'),
+      icon: Smartphone,
+      href: "/help-center/troubleshooting/mobile-app-issues",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.accountAccess.title'),
+      description: t('helpCenter.troubleshooting.accountAccess.description'),
+      icon: LogIn,
+      href: "/help-center/troubleshooting/account-access",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.dataSync.title'),
+      description: t('helpCenter.troubleshooting.dataSync.description'),
+      icon: RotateCcw,
+      href: "/help-center/troubleshooting/data-sync",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.errorMessages.title'),
+      description: t('helpCenter.troubleshooting.errorMessages.description'),
+      icon: AlertTriangle,
+      href: "/help-center/troubleshooting/error-messages",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.troubleshooting.contactSupport.title'),
+      description: t('helpCenter.troubleshooting.contactSupport.description'),
+      icon: MessageSquare,
+      href: "/help-center/troubleshooting/contact-support",
+      estimatedTime: "2 min read"
     }
   ];
 
@@ -126,7 +126,7 @@ export default function GettingStarted(props: any) {
               </Link>
             )}
             <h1 className="text-lg sm:text-xl font-bold">
-              {t('helpCenter.categories.gettingStarted.title')}
+              {t('helpCenter.categories.troubleshooting.title')}
             </h1>
             <div className="w-20" />
           </div>
@@ -137,14 +137,14 @@ export default function GettingStarted(props: any) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         {/* Category Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4">
-            <BookOpen className="w-8 h-8 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4">
+            <Wrench className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">
-            {t('helpCenter.categories.gettingStarted.title')}
+            {t('helpCenter.categories.troubleshooting.title')}
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            {t('helpCenter.categories.gettingStarted.description')}
+            {t('helpCenter.categories.troubleshooting.description')}
           </p>
         </div>
 

@@ -1,101 +1,101 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, BookOpen, User, Settings, Smartphone, Users, Bell, Shield, Eye } from "lucide-react";
+import { ArrowLeft, Shield, Eye, UserX, FileText, Key, Bell, Settings, Trash2, RotateCcw, Lock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 
-interface GettingStartedProps {
+interface PrivacySecurityProps {
   onBack?: () => void;
 }
 
-export default function GettingStarted(props: any) {
+export default function PrivacySecurity(props: any) {
   const { onBack } = props;
   const { t } = useLanguage();
 
   const articles = [
     {
-      title: t('helpCenter.gettingStarted.welcome.title'),
-      description: t('helpCenter.gettingStarted.welcome.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/welcome",
+      title: t('helpCenter.privacySecurity.privacySettings.title'),
+      description: t('helpCenter.privacySecurity.privacySettings.description'),
+      icon: Shield,
+      href: "/help-center/privacy-security/privacy-settings",
       estimatedTime: "5 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.creatingAccount.title'),
-      description: t('helpCenter.gettingStarted.creatingAccount.description'),
-      icon: User,
-      href: "/help-center/getting-started/creating-account",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.settingUpProfile.title'),
-      description: t('helpCenter.gettingStarted.settingUpProfile.description'),
-      icon: Settings,
-      href: "/help-center/getting-started/setting-up-profile",
-      estimatedTime: "4 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.dashboard.title'),
-      description: t('helpCenter.gettingStarted.dashboard.description'),
+      title: t('helpCenter.privacySecurity.profileVisibility.title'),
+      description: t('helpCenter.privacySecurity.profileVisibility.description'),
       icon: Eye,
-      href: "/help-center/getting-started/dashboard",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.privacySettings.title'),
-      description: t('helpCenter.gettingStarted.privacySettings.description'),
-      icon: Shield,
-      href: "/help-center/getting-started/privacy-settings",
+      href: "/help-center/privacy-security/profile-visibility",
       estimatedTime: "4 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.mobileApp.title'),
-      description: t('helpCenter.gettingStarted.mobileApp.description'),
-      icon: Smartphone,
-      href: "/help-center/getting-started/mobile-app",
-      estimatedTime: "2 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.desktopMobile.title'),
-      description: t('helpCenter.gettingStarted.desktopMobile.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/desktop-mobile",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.firstFollowers.title'),
-      description: t('helpCenter.gettingStarted.firstFollowers.description'),
-      icon: Users,
-      href: "/help-center/getting-started/first-followers",
+      title: t('helpCenter.privacySecurity.blockingReporting.title'),
+      description: t('helpCenter.privacySecurity.blockingReporting.description'),
+      icon: UserX,
+      href: "/help-center/privacy-security/blocking-reporting",
       estimatedTime: "4 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.followingUsers.title'),
-      description: t('helpCenter.gettingStarted.followingUsers.description'),
-      icon: Users,
-      href: "/help-center/getting-started/following-users",
-      estimatedTime: "3 min read"
+      title: t('helpCenter.privacySecurity.dataProtection.title'),
+      description: t('helpCenter.privacySecurity.dataProtection.description'),
+      icon: FileText,
+      href: "/help-center/privacy-security/data-protection",
+      estimatedTime: "6 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.notifications.title'),
-      description: t('helpCenter.gettingStarted.notifications.description'),
-      icon: Bell,
-      href: "/help-center/getting-started/notifications",
-      estimatedTime: "3 min read"
-    },
-    {
-      title: t('helpCenter.gettingStarted.securityTips.title'),
-      description: t('helpCenter.gettingStarted.securityTips.description'),
-      icon: Shield,
-      href: "/help-center/getting-started/security-tips",
+      title: t('helpCenter.privacySecurity.securityBestPractices.title'),
+      description: t('helpCenter.privacySecurity.securityBestPractices.description'),
+      icon: Lock,
+      href: "/help-center/privacy-security/security-best-practices",
       estimatedTime: "5 min read"
     },
     {
-      title: t('helpCenter.gettingStarted.platformTour.title'),
-      description: t('helpCenter.gettingStarted.platformTour.description'),
-      icon: BookOpen,
-      href: "/help-center/getting-started/platform-tour",
+      title: t('helpCenter.privacySecurity.twoFactorAuth.title'),
+      description: t('helpCenter.privacySecurity.twoFactorAuth.description'),
+      icon: Key,
+      href: "/help-center/privacy-security/two-factor-auth",
       estimatedTime: "6 min read"
+    },
+    {
+      title: t('helpCenter.privacySecurity.privacyPolicy.title'),
+      description: t('helpCenter.privacySecurity.privacyPolicy.description'),
+      icon: FileText,
+      href: "/help-center/privacy-security/privacy-policy",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.privacySecurity.dataSharing.title'),
+      description: t('helpCenter.privacySecurity.dataSharing.description'),
+      icon: Settings,
+      href: "/help-center/privacy-security/data-sharing",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.privacySecurity.thirdPartyIntegrations.title'),
+      description: t('helpCenter.privacySecurity.thirdPartyIntegrations.description'),
+      icon: Settings,
+      href: "/help-center/privacy-security/third-party-integrations",
+      estimatedTime: "5 min read"
+    },
+    {
+      title: t('helpCenter.privacySecurity.securityNotifications.title'),
+      description: t('helpCenter.privacySecurity.securityNotifications.description'),
+      icon: Bell,
+      href: "/help-center/privacy-security/security-notifications",
+      estimatedTime: "3 min read"
+    },
+    {
+      title: t('helpCenter.privacySecurity.accountRecovery.title'),
+      description: t('helpCenter.privacySecurity.accountRecovery.description'),
+      icon: RotateCcw,
+      href: "/help-center/privacy-security/account-recovery",
+      estimatedTime: "4 min read"
+    },
+    {
+      title: t('helpCenter.privacySecurity.dataDeletion.title'),
+      description: t('helpCenter.privacySecurity.dataDeletion.description'),
+      icon: Trash2,
+      href: "/help-center/privacy-security/data-deletion",
+      estimatedTime: "4 min read"
     }
   ];
 
@@ -126,7 +126,7 @@ export default function GettingStarted(props: any) {
               </Link>
             )}
             <h1 className="text-lg sm:text-xl font-bold">
-              {t('helpCenter.categories.gettingStarted.title')}
+              {t('helpCenter.categories.privacySecurity.title')}
             </h1>
             <div className="w-20" />
           </div>
@@ -137,14 +137,14 @@ export default function GettingStarted(props: any) {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
         {/* Category Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4">
-            <BookOpen className="w-8 h-8 text-white" />
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full mb-4">
+            <Shield className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">
-            {t('helpCenter.categories.gettingStarted.title')}
+            {t('helpCenter.categories.privacySecurity.title')}
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            {t('helpCenter.categories.gettingStarted.description')}
+            {t('helpCenter.categories.privacySecurity.description')}
           </p>
         </div>
 
