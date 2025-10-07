@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, BookOpen, User, Heart, Shield, Wrench, MessageCircle, ArrowRight, HelpCircle, Home } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useAnalytics } from "@/contexts/AnalyticsContext";
 import { Link } from "wouter";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import SearchResults from "@/components/SearchResults";
@@ -15,6 +16,7 @@ interface HelpCenterProps {
 export default function HelpCenter(props: any) {
   const { onBack } = props;
   const { t } = useLanguage();
+  const { trackHelpCenterSearch } = useAnalytics();
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearchResults, setShowSearchResults] = useState(false);
 
@@ -90,6 +92,8 @@ export default function HelpCenter(props: any) {
     e.preventDefault();
     if (searchQuery.trim()) {
       setShowSearchResults(true);
+      // Track search analytics
+      trackHelpCenterSearch(searchQuery, 0); // Results count will be updated by SearchResults component
     }
   };
 

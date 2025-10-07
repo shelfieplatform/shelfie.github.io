@@ -5,6 +5,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowLeft, Lightbulb, Star, Send } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useAnalytics } from "@/contexts/AnalyticsContext";
+import { useToast } from "@/hooks/use-toast";
+import { FormSubmissionService, validateFormData } from "@/services/formSubmissionService";
 import { Link } from "wouter";
 
 interface FeatureRequestsProps {
@@ -14,6 +17,8 @@ interface FeatureRequestsProps {
 export default function FeatureRequests(props: any) {
   const { onBack } = props;
   const { t } = useLanguage();
+  const { trackFeatureRequest } = useAnalytics();
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,11 +29,82 @@ export default function FeatureRequests(props: any) {
     useCase: "",
     benefits: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement form submission
-    console.log("Feature request submitted:", formData);
+    setIsSubmitting(true);
+    
+    try {
+      // Validate form data
+      const validation = validateFormData({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.description
+      });
+      
+      if (!validation.isValid) {
+        toast({
+          title: "Validation Error",
+          description: validation.errors.join(", "),
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // Submit form
+      const response = await FormSubmissionService.submitForm({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.description,
+        formType: 'feature-request',
+        additionalData: {
+          featureType: formData.featureType,
+          priority: formData.priority,
+          useCase: formData.useCase,
+          benefits: formData.benefits
+        }
+      });
+
+      if (response.success) {
+        toast({
+          title: "Feature Request Submitted",
+          description: response.message,
+        });
+        
+        // Track analytics
+        trackFeatureRequest(formData.featureType, formData.priority);
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          featureType: "",
+          priority: "",
+          description: "",
+          useCase: "",
+          benefits: ""
+        });
+      } else {
+        toast({
+          title: "Submission Failed",
+          description: response.message,
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -248,9 +324,10 @@ export default function FeatureRequests(props: any) {
               <Button
                 type="submit"
                 className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white w-full py-3"
+                disabled={isSubmitting}
               >
                 <Send className="w-4 h-4 mr-2" />
-                {t('helpCenter.contact.featureRequests.form.submit')}
+                {isSubmitting ? t('helpCenter.contact.featureRequests.form.submitting') : t('helpCenter.contact.featureRequests.form.submit')}
               </Button>
             </form>
           </CardContent>

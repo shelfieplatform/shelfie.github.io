@@ -5,6 +5,9 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowLeft, MessageCircle, Mail, Send, Bug, Lightbulb } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useAnalytics } from "@/contexts/AnalyticsContext";
+import { useToast } from "@/hooks/use-toast";
+import { FormSubmissionService, validateFormData } from "@/services/formSubmissionService";
 import { Link } from "wouter";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
@@ -15,6 +18,8 @@ interface ContactSupportProps {
 export default function ContactSupport(props: any) {
   const { onBack } = props;
   const { t } = useLanguage();
+  const { trackContactForm } = useAnalytics();
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -22,11 +27,64 @@ export default function ContactSupport(props: any) {
     message: "",
     category: "general"
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: Implement form submission
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    
+    try {
+      // Validate form data
+      const validation = validateFormData(formData);
+      if (!validation.isValid) {
+        toast({
+          title: "Validation Error",
+          description: validation.errors.join(", "),
+          variant: "destructive",
+        });
+        return;
+      }
+
+      // Submit form
+      const response = await FormSubmissionService.submitForm({
+        ...formData,
+        formType: 'contact'
+      });
+
+      if (response.success) {
+        toast({
+          title: "Form Submitted",
+          description: response.message,
+        });
+        
+        // Track analytics
+        trackContactForm('contact');
+        
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+          category: "general"
+        });
+      } else {
+        toast({
+          title: "Submission Failed",
+          description: response.message,
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -215,9 +273,10 @@ export default function ContactSupport(props: any) {
                 <Button
                   type="submit"
                   className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white w-full"
+                  disabled={isSubmitting}
                 >
                   <Send className="w-4 h-4 mr-2" />
-                  {t('helpCenter.contact.form.submit')}
+                  {isSubmitting ? t('helpCenter.contact.form.submitting') : t('helpCenter.contact.form.submit')}
                 </Button>
               </form>
             </CardContent>

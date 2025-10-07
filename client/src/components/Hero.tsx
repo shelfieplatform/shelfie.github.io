@@ -10,27 +10,31 @@ export default function Hero({ onJoinWaitlist }: HeroProps) {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      role="main"
+      aria-label="Hero section"
+    >
       {/* Floating Media Icons */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0" aria-hidden="true">
         <div className="absolute top-20 left-20 animate-bounce">
           <div className="p-3 bg-white/10 rounded-full backdrop-blur-sm">
-            <BookOpen className="w-6 h-6 text-white" />
+            <BookOpen className="w-6 h-6 text-white" aria-hidden="true" />
           </div>
         </div>
         <div className="absolute top-32 right-24 animate-bounce delay-300">
           <div className="p-3 bg-white/10 rounded-full backdrop-blur-sm">
-            <Music className="w-6 h-6 text-white" />
+            <Music className="w-6 h-6 text-white" aria-hidden="true" />
           </div>
         </div>
         <div className="absolute bottom-32 left-32 animate-bounce delay-500">
           <div className="p-3 bg-white/10 rounded-full backdrop-blur-sm">
-            <Film className="w-6 h-6 text-white" />
+            <Film className="w-6 h-6 text-white" aria-hidden="true" />
           </div>
         </div>
         <div className="absolute bottom-20 right-20 animate-bounce delay-700">
           <div className="p-3 bg-white/10 rounded-full backdrop-blur-sm">
-            <Tv className="w-6 h-6 text-white" />
+            <Tv className="w-6 h-6 text-white" aria-hidden="true" />
           </div>
         </div>
       </div>
@@ -45,13 +49,16 @@ export default function Hero({ onJoinWaitlist }: HeroProps) {
         </p>
         <Button 
           size="lg" 
-          className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white font-semibold px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 active:scale-95 focus:outline-none w-full sm:w-auto"
+          className="bg-[#A690F2] hover:bg-[#9C7FE8] text-white font-semibold px-6 sm:px-8 md:px-10 py-4 sm:py-5 md:py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 active:scale-95 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-transparent w-full sm:w-auto"
           onClick={onJoinWaitlist}
           data-testid="button-join-waitlist"
+          aria-label="Join the waitlist to get early access to Shelfie"
+          role="button"
+          tabIndex={0}
         >
           <span className="relative">
             {t('hero.joinWaitlist')}
-            <span className="absolute -top-1 -right-1 w-3 h-3 bg-white/20 rounded-full animate-pulse"></span>
+            <span className="absolute -top-1 -right-1 w-3 h-3 bg-white/20 rounded-full animate-pulse" aria-hidden="true"></span>
           </span>
         </Button>
       </div>

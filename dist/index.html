@@ -26,14 +26,60 @@
     <!-- Additional SEO -->
     <meta name="theme-color" content="#A690F2">
     <meta name="msapplication-TileColor" content="#A690F2">
+    
+    <!-- Accessibility -->
+    <meta name="color-scheme" content="dark">
+    
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-ytvHQAbk.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C81mu3fM.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon-16x16.png">
+    
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#A690F2">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Shelfie",
+      "description": "Curate and organize your favorite books, music, movies, and TV shows. Connect with friends and discover new favorites through social sharing.",
+      "url": "https://www.shelfieplatform.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.shelfieplatform.com/help-center?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Shelfie Platform",
+        "url": "https://www.shelfieplatform.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.shelfieplatform.com/logo.png"
+        }
+      }
+    }
+    </script>
+    <script type="module" crossorigin src="/assets/index-Bl_C8_TM.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-1XCZ5AD1.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-DpYl3jhG.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-B2rm_Apj.js">
+    <link rel="modulepreload" crossorigin href="/assets/icons-BYUEl01Y.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BY5EfQ6g.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" role="application" aria-label="Shelfie application"></div>
     <!-- This is a replit script which adds a banner on the top of the page when opened in development mode outside the replit environment -->
     <script type="text/javascript" src="https://replit.com/public/js/replit-dev-banner.js"></script>
   </body>

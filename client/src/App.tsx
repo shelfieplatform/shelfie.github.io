@@ -4,7 +4,13 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { AnalyticsProvider } from "@/contexts/AnalyticsContext";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import ScrollToTop from "@/components/ScrollToTop";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import OfflineIndicator from "@/components/OfflineIndicator";
+import { usePerformanceMonitoring, useResourcePreloading } from "@/hooks/usePerformanceMonitoring";
+import { useServiceWorker } from "@/hooks/useServiceWorker";
 import Home from "@/pages/Home";
 import PrivacyPolicyPage from "@/pages/PrivacyPolicy";
 import TermsOfServicePage from "@/pages/TermsOfService";
@@ -215,15 +221,28 @@ function Router() {
 }
 
 function App() {
+  // Initialize performance monitoring
+  usePerformanceMonitoring();
+  useResourcePreloading();
+  
+  // Initialize service worker
+  useServiceWorker();
+
   return (
-    <QueryClientProvider client={queryClient}>
-      <LanguageProvider>
-        <TooltipProvider>
-          <Toaster />
-          <Router />
-        </TooltipProvider>
-      </LanguageProvider>
-    </QueryClientProvider>
+    <ErrorBoundary>
+      <QueryClientProvider client={queryClient}>
+        <LanguageProvider>
+          <AnalyticsProvider>
+            <TooltipProvider>
+              <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
+              <Toaster />
+              <OfflineIndicator />
+              <Router />
+            </TooltipProvider>
+          </AnalyticsProvider>
+        </LanguageProvider>
+      </QueryClientProvider>
+    </ErrorBoundary>
   );
 }
 

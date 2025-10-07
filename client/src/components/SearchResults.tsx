@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import Fuse from "fuse.js";
 import { SearchArticle, getSearchData } from "@/lib/searchData";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useAnalytics } from "@/contexts/AnalyticsContext";
 
 interface SearchResultsProps {
   query: string;
@@ -16,6 +17,7 @@ interface SearchResultsProps {
 
 export default function SearchResults({ query, onClose }: SearchResultsProps) {
   const { t } = useLanguage();
+  const { trackHelpCenterSearch } = useAnalytics();
   const [searchQuery, setSearchQuery] = useState(query);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [sortBy, setSortBy] = useState<"relevance" | "category" | "time">("relevance");
@@ -43,6 +45,9 @@ export default function SearchResults({ query, onClose }: SearchResultsProps) {
     if (!searchQuery.trim()) return [];
 
     const results = fuse.search(searchQuery);
+    
+    // Track search analytics
+    trackHelpCenterSearch(searchQuery, results.length);
     
     // Filter by category if selected
     let filteredResults = results;
