@@ -623,45 +623,6 @@ Shelfie is a social media platform that allows users to curate and share their f
 - URL structure
 - Page titles
 
-## Technical Implementation
-
-### File Structure
-```
-help-center/
-├── app/
-│   ├── page.tsx (main help center)
-│   ├── getting-started/
-│   │   ├── page.tsx
-│   │   └── welcome/
-│   │       └── page.tsx
-│   ├── account-profile/
-│   │   ├── page.tsx
-│   │   └── change-username/
-│   │       └── page.tsx
-│   ├── adding-favorites/
-│   │   ├── page.tsx
-│   │   └── add-books/
-│   │       └── page.tsx
-│   ├── privacy-security/
-│   │   ├── page.tsx
-│   │   └── two-factor-auth/
-│   │       └── page.tsx
-│   ├── troubleshooting/
-│   │   ├── page.tsx
-│   │   └── login-issues/
-│   │       └── page.tsx
-│   └── contact/
-│       └── page.tsx
-├── components/
-│   ├── SearchBar.tsx
-│   ├── CategoryGrid.tsx
-│   ├── PopularArticles.tsx
-│   ├── ContactSupport.tsx
-│   └── ArticleLayout.tsx
-└── lib/
-    └── algolia.ts
-```
-
 ### Component Requirements
 - Responsive design
 - Mobile-first approach
@@ -786,33 +747,6 @@ help-center/
 - Analytics implementation
 - Error monitoring
 
-## Technical Infrastructure Context
-
-### Backend Architecture
-- **Server**: Node.js/Express API running on AWS EC2 (t3.micro instance)
-- **Database**: MongoDB Atlas (M0 free tier) with IP whitelisting
-- **Authentication**: JWT tokens with email verification via AWS SES
-- **File Storage**: AWS S3 for profile pictures and content images
-- **CDN**: CloudFlare for global content delivery and DDoS protection
-- **Real-time**: Socket.io for live notifications and messaging
-- **Email Service**: AWS SES for transactional emails and notifications
-
-### Common Technical Issues
-- **API Rate Limits**: TMDb, Google Books, Spotify API rate limiting
-- **Database Connection**: MongoDB Atlas connection issues
-- **File Upload**: AWS S3 upload failures
-- **Email Delivery**: AWS SES email delivery issues
-- **Real-time Features**: Socket.io connection problems
-- **Mobile App**: iOS/Android specific issues
-- **Browser Compatibility**: Cross-browser functionality
-
-### Platform-Specific Troubleshooting
-- **Content Search**: API integration failures (TMDb, Google Books, Spotify)
-- **Import Issues**: Bulk import failures and data mapping problems
-- **Recommendation Engine**: AI recommendation system issues
-- **Social Features**: Following/follower system problems
-- **Verification System**: Badge verification process issues
-- **Admin Panel**: Content moderation and user management problems
 
 ## Content Writing Guidelines
 
@@ -824,7 +758,7 @@ help-center/
 - **User-Focused**: Write from user's perspective
 
 ### Shelfie-Specific Language
-- Use "shelf" instead of "collection" or "list"
+- Use "digital shelf" instead of "collection" or "list"
 - Refer to "favorites" as items added to shelf
 - Use "following" and "followers" consistently
 - Reference "verification badges" for special accounts
