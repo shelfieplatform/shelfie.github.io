@@ -5066,6 +5066,8 @@ const translations = {
     'helpCenter.articles.blockingReporting.previousArticle': 'Önceki: Veri İçe/Dışa Aktarma',
     'helpCenter.articles.blockingReporting.nextArticle': 'Sonraki: Hesap Kurtarma',
     
+    
+    
     // Account & Profile Category
     'helpCenter.accountProfile.changeUsername.title': 'Kullanıcı Adınızı Değiştirme',
     'helpCenter.accountProfile.changeUsername.description': 'Kullanıcı adınızı nasıl güncelleyeceğinizi ve dikkat edilecekleri öğrenin',
