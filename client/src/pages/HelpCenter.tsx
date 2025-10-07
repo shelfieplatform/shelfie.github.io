@@ -6,6 +6,7 @@ import { Search, BookOpen, User, Heart, Shield, Wrench, MessageCircle, ArrowRigh
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import SearchResults from "@/components/SearchResults";
 
 interface HelpCenterProps {
   onBack?: () => void;
@@ -15,6 +16,7 @@ export default function HelpCenter(props: any) {
   const { onBack } = props;
   const { t } = useLanguage();
   const [searchQuery, setSearchQuery] = useState("");
+  const [showSearchResults, setShowSearchResults] = useState(false);
 
   const categories = [
     {
@@ -87,13 +89,33 @@ export default function HelpCenter(props: any) {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchQuery.trim()) {
-      // TODO: Implement Algolia search
-      console.log("Searching for:", searchQuery);
+      setShowSearchResults(true);
     }
   };
 
+  const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value);
+    if (e.target.value.trim()) {
+      setShowSearchResults(true);
+    } else {
+      setShowSearchResults(false);
+    }
+  };
+
+  const handleCloseSearch = () => {
+    setShowSearchResults(false);
+    setSearchQuery("");
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#A690F2] to-[#2C1761] text-white">
+    <>
+      {showSearchResults && (
+        <SearchResults 
+          query={searchQuery} 
+          onClose={handleCloseSearch} 
+        />
+      )}
+      <div className="min-h-screen bg-gradient-to-b from-[#A690F2] to-[#2C1761] text-white">
       {/* Header */}
       <div className="sticky top-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -140,7 +162,7 @@ export default function HelpCenter(props: any) {
                 type="text"
                 placeholder={t('helpCenter.search.placeholder')}
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={handleSearchInputChange}
                 className="pl-10 pr-4 py-3 bg-white/10 border-white/20 text-white placeholder-white/60 focus:bg-white/20 focus:border-white/40"
               />
             </div>
@@ -242,6 +264,7 @@ export default function HelpCenter(props: any) {
           </Card>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
