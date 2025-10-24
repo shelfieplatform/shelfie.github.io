@@ -134,11 +134,8 @@ export default function HelpCenter(props: any) {
                   ← {t('helpCenter.back')}
                 </Button>
               )}
-              <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-                <div className="w-8 h-8 bg-gradient-to-r from-[#A690F2] to-[#9C7FE8] rounded-lg flex items-center justify-center">
-                  <Home className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-lg sm:text-xl font-bold text-white">Shelfie</span>
+              <Link href="/" className="text-lg sm:text-xl font-bold text-white hover:opacity-80 transition-opacity">
+                Shelfie
               </Link>
             </div>
             <h1 className="text-lg sm:text-xl font-bold text-white">{t('helpCenter.title')}</h1>
@@ -167,7 +164,7 @@ export default function HelpCenter(props: any) {
                 placeholder={t('helpCenter.search.placeholder')}
                 value={searchQuery}
                 onChange={handleSearchInputChange}
-                className="pl-10 pr-4 py-3 bg-white/10 border-white/20 text-white placeholder-white/60 focus:bg-white/20 focus:border-white/40"
+                className="pl-10 pr-4 py-3 bg-white/10 border-white/20 text-white placeholder-white focus:bg-white/20 focus:border-white/40"
               />
             </div>
           </form>

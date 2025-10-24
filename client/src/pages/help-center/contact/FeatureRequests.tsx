@@ -198,7 +198,7 @@ export default function FeatureRequests(props: any) {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                    className="bg-white/10 border-white/20 text-white placeholder-white"
                     placeholder={t('helpCenter.contact.featureRequests.form.namePlaceholder')}
                   />
                 </div>
@@ -212,7 +212,7 @@ export default function FeatureRequests(props: any) {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                    className="bg-white/10 border-white/20 text-white placeholder-white"
                     placeholder={t('helpCenter.contact.featureRequests.form.emailPlaceholder')}
                   />
                 </div>
@@ -227,7 +227,7 @@ export default function FeatureRequests(props: any) {
                   value={formData.subject}
                   onChange={handleInputChange}
                   required
-                  className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                  className="bg-white/10 border-white/20 text-white placeholder-white"
                   placeholder={t('helpCenter.contact.featureRequests.form.subjectPlaceholder')}
                 />
               </div>
@@ -288,7 +288,7 @@ export default function FeatureRequests(props: any) {
                   onChange={handleInputChange}
                   required
                   rows={4}
-                  className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                  className="bg-white/10 border-white/20 text-white placeholder-white"
                   placeholder={t('helpCenter.contact.featureRequests.form.descriptionPlaceholder')}
                 />
               </div>
@@ -302,7 +302,7 @@ export default function FeatureRequests(props: any) {
                   value={formData.useCase}
                   onChange={handleInputChange}
                   rows={3}
-                  className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                  className="bg-white/10 border-white/20 text-white placeholder-white"
                   placeholder={t('helpCenter.contact.featureRequests.form.useCasePlaceholder')}
                 />
               </div>
@@ -316,7 +316,7 @@ export default function FeatureRequests(props: any) {
                   value={formData.benefits}
                   onChange={handleInputChange}
                   rows={3}
-                  className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                  className="bg-white/10 border-white/20 text-white placeholder-white"
                   placeholder={t('helpCenter.contact.featureRequests.form.benefitsPlaceholder')}
                 />
               </div>

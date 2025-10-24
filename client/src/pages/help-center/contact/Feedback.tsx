@@ -103,7 +103,7 @@ export default function Feedback(props: any) {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                      className="bg-white/10 border-white/20 text-white placeholder-white"
                       placeholder={t('helpCenter.contact.form.namePlaceholder')}
                     />
                   </div>
@@ -117,7 +117,7 @@ export default function Feedback(props: any) {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                      className="bg-white/10 border-white/20 text-white placeholder-white"
                       placeholder={t('helpCenter.contact.form.emailPlaceholder')}
                     />
                   </div>
@@ -131,7 +131,7 @@ export default function Feedback(props: any) {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                    className="bg-white/10 border-white/20 text-white placeholder-white"
                     placeholder={t('helpCenter.contact.feedback.subjectPlaceholder')}
                   />
                 </div>
@@ -166,7 +166,7 @@ export default function Feedback(props: any) {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="bg-white/10 border-white/20 text-white placeholder-white/60"
+                    className="bg-white/10 border-white/20 text-white placeholder-white"
                     placeholder={t('helpCenter.contact.feedback.messagePlaceholder')}
                   />
                 </div>
