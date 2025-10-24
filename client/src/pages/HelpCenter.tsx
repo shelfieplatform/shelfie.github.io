@@ -19,7 +19,7 @@ export default function HelpCenter(props: any) {
   const { trackHelpCenterSearch } = useAnalytics();
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearchResults, setShowSearchResults] = useState(false);
-  // URGENT: Custom domain not updating - Force deployment for shelfieplatform.com
+  // CRITICAL: Reconnect Cloudflare Pages Git integration - Force fresh build
 
 
   const categories = [
