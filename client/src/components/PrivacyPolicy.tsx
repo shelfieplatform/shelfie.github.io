@@ -53,12 +53,6 @@ export default function PrivacyPolicy({ onBack }: PrivacyPolicyProps) {
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
-        {renderSection(
-          t('privacy.lastUpdated'),
-          <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-            {t('privacy.intro')}
-          </p>
-        )}
 
         {renderSection(
           t('privacy.section1.title'),
