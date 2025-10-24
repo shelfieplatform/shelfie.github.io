@@ -19,7 +19,7 @@ export default function HelpCenter(props: any) {
   const { trackHelpCenterSearch } = useAnalytics();
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearchResults, setShowSearchResults] = useState(false);
-  // Force rebuild to trigger deployment - Cloudflare Pages cache bust - Final deployment
+  // Force rebuild to trigger deployment - Cloudflare Pages cache bust - Final deployment - Cache purge required
 
 
   const categories = [
