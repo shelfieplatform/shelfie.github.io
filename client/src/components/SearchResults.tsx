@@ -18,6 +18,7 @@ interface SearchResultsProps {
 export default function SearchResults({ query, onClose }: SearchResultsProps) {
   const { t } = useLanguage();
   const { trackHelpCenterSearch } = useAnalytics();
+  // Force rebuild: Search modal dark theme deployment
   const [searchQuery, setSearchQuery] = useState(query);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [sortBy, setSortBy] = useState<"relevance" | "category" | "time">("relevance");
