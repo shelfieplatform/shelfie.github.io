@@ -159,14 +159,14 @@ export default function HelpCenter(props: any) {
           
           {/* Search Bar */}
           <form onSubmit={handleSearch} className="max-w-2xl mx-auto mb-8">
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/60 w-5 h-5" />
+            <div className="relative group">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70 w-5 h-5 transition-colors group-focus-within:text-white" />
               <Input
                 type="text"
                 placeholder={t('helpCenter.search.placeholder')}
                 value={searchQuery}
                 onChange={handleSearchInputChange}
-                className="pl-10 pr-4 py-3 bg-white/10 border-white/20 text-white placeholder-white focus:bg-white/20 focus:border-white/40"
+                className="pl-10 pr-4 py-3 bg-white/10 border-white/20 text-white placeholder-white focus:bg-white/20 focus:border-white/40 focus:ring-2 focus:ring-white/20 focus:ring-offset-2 focus:ring-offset-transparent transition-all duration-200 hover:bg-white/15 hover:border-white/30"
               />
             </div>
           </form>
