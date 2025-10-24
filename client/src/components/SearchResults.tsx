@@ -98,7 +98,7 @@ export default function SearchResults({ query, onClose }: SearchResultsProps) {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-start justify-center p-4">
-      <div className="bg-gradient-to-b from-[#A690F2] to-[#2C1761] rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
+      <div className="bg-gradient-to-b from-[#A690F2] to-[#2C1761] rounded-lg shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden !important" style={{background: 'linear-gradient(to bottom, #A690F2, #2C1761)'}}>
         {/* Header */}
         <div className="p-6 border-b border-white/20">
           <div className="flex items-center justify-between mb-4">
