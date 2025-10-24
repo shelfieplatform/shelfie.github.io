@@ -20,6 +20,7 @@ export default function HelpCenter(props: any) {
   const [searchQuery, setSearchQuery] = useState("");
   const [showSearchResults, setShowSearchResults] = useState(false);
 
+
   const categories = [
     {
       title: t('helpCenter.categories.gettingStarted.title'),
